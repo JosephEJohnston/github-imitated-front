@@ -1,0 +1,29 @@
+.content-display {
+    display: flex;
+
+}
+
+#header-nav {
+    display: flex;
+}
+
+#header-nav-left {
+    flex: 25%;
+}
+
+#header-nav-middle {
+    flex: 50%;
+}
+
+#header-nav-right {
+    flex: 25%;
+}
+
+#left-sidebar-title {
+    display: flex;
+}
+
+.left-sidebar-li {
+    display: flex;
+}
+

@@ -3,130 +3,411 @@
 <head>
     <meta charset="UTF-8">
     <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="main-page.css">
 </head>
 <body>
 <header>
-    <div>
-        <button>
-            1
-        </button>
-        <button>
-            2
-        </button>
-        <button>
-            Dashboard
-        </button>
-    </div>
-    <div>
-        <button>Type / to search</button>
-        <button>
-            1
-        </button>
-        <button>
-            2
-        </button>
-        |
-        <button>
-            3
-        </button>
-        <button>
-            4
-        </button>
-        <button>
-            5
-        </button>
-        <button>
-            6
-        </button>
-        <button>
-            user
-        </button>
-    </div>
+    <nav id="header-nav">
+        <div id="header-nav-left">
+            <button>
+                1
+            </button>
+            <button>
+                2
+            </button>
+            <button>
+                Dashboard
+            </button>
+        </div>
+        <div id="header-nav-middle">
+
+        </div>
+        <div id="header-nav-right">
+            <button>Type / to search</button>
+            <button>
+                1
+            </button>
+            <button>
+                2
+            </button>
+            |
+            <button>
+                3
+            </button>
+            <button>
+                4
+            </button>
+            <button>
+                5
+            </button>
+            <button>
+                6
+            </button>
+            <button>
+                user
+            </button>
+        </div>
+    </nav>
 </header>
-<aside>
-    <div>
-        <div>
-            Top repositories
+<div class="content-display">
+    <aside id="left-sidebar">
+        <div id="left-sidebar-title">
+            <div>
+                Top repositories
+            </div>
+            <div>
+                <button>
+                    New
+                </button>
+            </div>
         </div>
-        <button>
-            New
-        </button>
-    </div>
-    <div>
-        Find a repository
-    </div>
-    <div>
-        <button>
-            User
-        </button>
         <div>
-            JosephEJohnston/learn-ts-fullstack-nextapp
+            Find a repository
         </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
+        <ul>
+            <li class="left-sidebar-li">
+                <div>
+                    <button>
+                        User
+                    </button>
+                </div>
+                <div>
+                    JosephEJohnston/learn-ts-fullstack-nextapp
+                </div>
+            </li>
+            <li class="left-sidebar-li">
+                <div>
+                    <button>
+                        User
+                    </button>
+                </div>
+                <div>
+                    JosephEJohnston/bar-count
+                </div>
+            </li>
+            <li class="left-sidebar-li">
+                <div>
+                    <button>
+                        User
+                    </button>
+                </div>
+                <div>
+                    JosephEJohnston/imitate-todoist
+                </div>
+            </li>
+        </ul>
         <div>
-            JosephEJohnston/bar-count
+            <button>Show more</button>
         </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
-        <div>
-            JosephEJohnston/imitate-todoist
-        </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
-        <div>
-            JosephEJohnston/imitate-todoist-backend
-        </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
-        <div>
-            JosephEJohnston/docker_boot
-        </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
-        <div>
-            JosephEJohnston/leetcode
-        </div>
-    </div>
-    <div>
-        <button>
-            User
-        </button>
-        <div>
-            JosephEJohnston/learn-spring-in-action
-        </div>
-    </div>
-    <div>
-        <button>Show more</button>
-    </div>
-</aside>
-<div id="content">
-    <main>
+    </aside>
+    <div id="content">
+        <main>
+            <div>
+                <div>Home</div>
+                <div>
+                    <div>Ask Copilot</div>
+                    <button></button>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <button>
+                                <span></span>
+                                <span>Create a profile README for me</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <span></span>
+                                <span>Get code feedback</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <span></span>
+                                <span>My open pull requests</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div>
+                <div>
+                    <div>Feed</div>
+                    <div>
+                        <button>Filter</button>
+                    </div>
+                </div>
 
+                <div>
+                    <header>
+                        <div>icon</div>
+                        <div>Treading repositories</div>
+                        <div>·</div>
+                        <div>See more</div>
 
-    </main>
-    <footer>
+                        <div>···</div>
+                    </header>
+                    <section>
+                        <div>
+                            <div>
+                                icon
+                            </div>
+                            <div>Olow304/memvid</div>
 
-    </footer>
+                            <div>
+                                <button>
+                                    <span>icon</span>
+                                    <span>Star</span>
+                                </button>
+                                <button>
+                                    <span>icon</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Video-based AI memory library. Store millions of text chunks in MP4 files with
+                                lightning-fast semantic search. No databse needed.
+                            </p>
+                        </div>
+                        <div>
+                            <button>
+                                <span>icon</span>
+                                <span>Python</span>
+                            </button>
+                            <button>
+                                <span>icon</span>
+                                <span>6.1k</span>
+                            </button>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <div>
+                                icon
+                            </div>
+                            <div>tensorzero/tensorzero</div>
+
+                            <div>
+                                <button>
+                                    <span>icon</span>
+                                    <span>Star</span>
+                                </button>
+                                <button>
+                                    <span>icon</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                TensorZero creates a feedback loop for optimizing LLM applications -- turning production
+                                data into smarter, faster, and cheaper models.
+                            </p>
+                        </div>
+                        <div>
+                            <button>
+                                <span>icon</span>
+                                <span>Rust</span>
+                            </button>
+                            <button>
+                                <span>icon</span>
+                                <span>4.9k</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <header>
+                        <div>
+                            icon
+                        </div>
+                        <div>
+                            Recommended for you
+                        </div>
+
+                        <button>···</button>
+                    </header>
+                    <section>
+                        <div>
+                            <div>icon</div>
+                            <div>TeamStuQ/skill-map</div>
+                            <div>
+                                <button>
+                                    <span>icon</span>
+                                    <span>Star</span>
+                                </button>
+                                <button>
+                                    <span>icon</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>程序员技能图谱</p>
+                        </div>
+                        <div>
+                            <div>
+                                <button>
+                                    <span>icon</span>
+                                    <span>HTML</span>
+                                </button>
+                                <button>
+                                    <span>icon</span>
+                                    <span>20.1k</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <button>icon</button>
+                <div>
+                    <span>© 2025 GitHub, Inc.</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Status</a></li>
+                    <li><a href="">Docs</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Manage cookies</a></li>
+                    <li><a href="">Do not share my personal information</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <aside>
+        <div>
+            <h2>Lastest changes</h2>
+            <ul>
+                <li>
+                    <div>
+                        <div>icon</div>
+                        <div>3 days ago</div>
+                    </div>
+                    <div>
+                        You can now run model evaluations with the Models CLI
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>icon</div>
+                        <div>4 days ago</div>
+                    </div>
+                    <div>
+                        Fluency and coherence evaluators added to GitHub Models
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>icon</div>
+                        <div>4 days ago</div>
+                    </div>
+                    <div>
+                        Control contrast for all GitHub themes
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>icon</div>
+                        <div>5 days ago</div>
+                    </div>
+                    <div>
+                        Enhanced metrics for CodeQL pull request alerts and Copilot autofixes
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <span>|</span>
+                <span>View changelog</span>
+                <span>icon</span>
+            </div>
+        </div>
+        <div>
+            <h2>Explore repositories</h2>
+            <ul>
+                <li>
+                    <section>
+                        <div>
+                            <div>icon</div>
+                            <div>yygmind/blog</div>
+                            <div>
+                                <button>icon</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                我是木易杨，公众号 [高级前端进阶] 作者，跟着我每周重点攻克一个前端面试重难点。
+                                接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
+                            </p>
+                        </div>
+                        <div>
+                            <span>icon</span>
+                            <span>10.6k</span>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <div>
+                            <div>icon</div>
+                            <div>YvetteLau / Blog</div>
+                            <div>
+                                <button>icon</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                [前端进阶] 优质博文
+                            </p>
+                        </div>
+                        <div>
+                            <span>icon</span>
+                            <span>2.9k</span>
+                        </div>
+                        <div>
+                            <span>icon</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <div>
+                            <div>icon</div>
+                            <div>ruanyf / es6tutorial</div>
+                            <div>
+                                <button>icon</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                《ECMAScript 6入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新增的语法特性
+                            </p>
+                        </div>
+                        <div>
+                            <span>icon</span>
+                            <span>21.4k</span>
+                        </div>
+                        <div>
+                            <span>icon</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+            <div>
+                <span>Explore more -></span>
+            </div>
+        </div>
+    </aside>
 </div>
-<aside>
-
-</aside>
 </body>
 </html>
