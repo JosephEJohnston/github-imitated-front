@@ -1,3 +1,7 @@
+ul {
+    list-style: none;
+}
+
 .content-display {
     display: flex;
 
@@ -5,18 +9,7 @@
 
 #header-nav {
     display: flex;
-}
-
-#header-nav-left {
-    flex: 25%;
-}
-
-#header-nav-middle {
-    flex: 50%;
-}
-
-#header-nav-right {
-    flex: 25%;
+    justify-content: space-between;
 }
 
 #left-sidebar-title {
@@ -27,3 +20,37 @@
     display: flex;
 }
 
+#home-section {
+
+}
+
+#home-section-ask-copilot {
+    display: flex;
+}
+
+#home-section-button-list {
+    display: flex;
+}
+
+#feed-section-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-section-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-section-content-header-left {
+    display: flex;
+}
+
+.flex-part {
+    display: flex;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
