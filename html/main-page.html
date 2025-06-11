@@ -51,7 +51,7 @@
 </header>
 <div class="content-display">
     <aside id="left-sidebar">
-        <div id="left-sidebar-title">
+        <div id="left-sidebar-title" class="flex-space-between">
             <div>
                 Top repositories
             </div>
@@ -95,10 +95,12 @@
                     JosephEJohnston/imitate-todoist
                 </div>
             </li>
+            <li>
+                <div>
+                    <button>Show more</button>
+                </div>
+            </li>
         </ul>
-        <div>
-            <button>Show more</button>
-        </div>
     </aside>
     <div id="content">
         <main>
@@ -154,7 +156,7 @@
                     </header>
                     <section>
                         <div class="flex-space-between">
-                            <div class="flex-part">
+                            <div class="display-flex">
                                 <div>icon</div>
                                 <div>Olow304/memvid</div>
                             </div>
@@ -188,7 +190,7 @@
                     </section>
                     <section>
                         <div class="flex-space-between">
-                            <div class="flex-part">
+                            <div class="display-flex">
                                 <div>icon</div>
                                 <div>tensorzero/tensorzero</div>
                             </div>
@@ -223,7 +225,7 @@
                 </div>
                 <div id="feed-recommend-section">
                     <header class="flex-space-between">
-                        <div class="flex-part">
+                        <div class="display-flex">
                             <div>
                                 icon
                             </div>
@@ -238,7 +240,7 @@
                     </header>
                     <section>
                         <div class="flex-space-between">
-                            <div class="flex-part">
+                            <div class="display-flex">
                                 <div>icon</div>
                                 <div>TeamStuQ/skill-map</div>
                             </div>
@@ -288,12 +290,12 @@
             </ul>
         </footer>
     </div>
-    <aside>
+    <aside id="right-sidebar">
         <div>
             <h2>Lastest changes</h2>
             <ul>
                 <li>
-                    <div>
+                    <div class="display-flex">
                         <div>icon</div>
                         <div>3 days ago</div>
                     </div>
@@ -302,7 +304,7 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="display-flex">
                         <div>icon</div>
                         <div>4 days ago</div>
                     </div>
@@ -311,7 +313,7 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="display-flex">
                         <div>icon</div>
                         <div>4 days ago</div>
                     </div>
@@ -320,7 +322,7 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="display-flex">
                         <div>icon</div>
                         <div>5 days ago</div>
                     </div>
@@ -328,21 +330,26 @@
                         Enhanced metrics for CodeQL pull request alerts and Copilot autofixes
                     </div>
                 </li>
+                <li>
+                    <div>
+                        <span>|</span>
+                        <span>View changelog</span>
+                        <span>icon</span>
+                    </div>
+                </li>
             </ul>
-            <div>
-                <span>|</span>
-                <span>View changelog</span>
-                <span>icon</span>
-            </div>
+
         </div>
         <div>
             <h2>Explore repositories</h2>
             <ul>
                 <li>
                     <section>
-                        <div>
-                            <div>icon</div>
-                            <div>yygmind/blog</div>
+                        <div class="flex-space-between">
+                            <div class="display-flex">
+                                <div>icon</div>
+                                <div>yygmind/blog</div>
+                            </div>
                             <div>
                                 <button>icon</button>
                             </div>
@@ -353,17 +360,21 @@
                                 接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
                             </p>
                         </div>
-                        <div>
-                            <span>icon</span>
-                            <span>10.6k</span>
+                        <div class="display-flex">
+                            <div>
+                                <span>icon</span>
+                                <span>10.6k</span>
+                            </div>
                         </div>
                     </section>
                 </li>
                 <li>
                     <section>
-                        <div>
-                            <div>icon</div>
-                            <div>YvetteLau / Blog</div>
+                        <div class="flex-space-between">
+                            <div class="display-flex">
+                                <div>icon</div>
+                                <div>YvetteLau / Blog</div>
+                            </div>
                             <div>
                                 <button>icon</button>
                             </div>
@@ -373,21 +384,25 @@
                                 [前端进阶] 优质博文
                             </p>
                         </div>
-                        <div>
-                            <span>icon</span>
-                            <span>2.9k</span>
-                        </div>
-                        <div>
-                            <span>icon</span>
-                            <span>JavaScript</span>
+                        <div class="display-flex">
+                            <div>
+                                <span>icon</span>
+                                <span>2.9k</span>
+                            </div>
+                            <div>
+                                <span>icon</span>
+                                <span>JavaScript</span>
+                            </div>
                         </div>
                     </section>
                 </li>
                 <li>
                     <section>
-                        <div>
-                            <div>icon</div>
-                            <div>ruanyf / es6tutorial</div>
+                        <div class="flex-space-between">
+                            <div class="display-flex">
+                                <div>icon</div>
+                                <div>ruanyf / es6tutorial</div>
+                            </div>
                             <div>
                                 <button>icon</button>
                             </div>
@@ -397,20 +412,24 @@
                                 《ECMAScript 6入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新增的语法特性
                             </p>
                         </div>
-                        <div>
-                            <span>icon</span>
-                            <span>21.4k</span>
-                        </div>
-                        <div>
-                            <span>icon</span>
-                            <span>JavaScript</span>
+                        <div class="display-flex">
+                            <div>
+                                <span>icon</span>
+                                <span>21.4k</span>
+                            </div>
+                            <div>
+                                <span>icon</span>
+                                <span>JavaScript</span>
+                            </div>
                         </div>
                     </section>
                 </li>
+                <li>
+                    <div>
+                        <span>Explore more -></span>
+                    </div>
+                </li>
             </ul>
-            <div>
-                <span>Explore more -></span>
-            </div>
         </div>
     </aside>
 </div>

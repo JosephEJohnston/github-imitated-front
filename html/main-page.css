@@ -12,8 +12,20 @@ ul {
     justify-content: space-between;
 }
 
+#left-sidebar {
+    flex: 25%;
+}
+
+#content {
+    flex: 50%;
+}
+
+#right-sidebar {
+    flex: 25%;
+}
+
 #left-sidebar-title {
-    display: flex;
+
 }
 
 .left-sidebar-li {
@@ -46,7 +58,7 @@ ul {
     display: flex;
 }
 
-.flex-part {
+.display-flex {
     display: flex;
 }
 
