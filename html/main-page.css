@@ -40,14 +40,15 @@ ul {
     box-shadow: 1px 1px var(--borderColor-default);
 }
 
-.head-nav-common-button-div {
-    background-color: transparent;
-    width: 32px;
-}
 
 .head-item-border > button:hover,
 .head-nav-left-text > button:hover {
     cursor: pointer;
+}
+
+.head-nav-common-button-div {
+    background-color: transparent;
+    width: 32px;
 }
 
 .head-nav-common-button-div > button {
@@ -68,6 +69,27 @@ ul {
     border: none;
     background-color: transparent;
     font-weight: 550;
+}
+
+#combine-button {
+    width: 48px;
+    display: flex;
+}
+
+#combine-button > button {
+
+}
+
+#combine-button-left {
+    width: 60%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#combine-button-right {
+    width: 40%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #header-nav-right {
@@ -95,16 +117,18 @@ ul {
 }
 
 .type-to-search-button-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.type-to-search-button-text > span {
+.slash {
     display: inline-block;
     height: 1rem;
     width: 1rem;
+    padding-top: 0.05rem;
+    border: 0.1rem solid var(--borderColor-default);
+    border-radius: var(--borderRadius-medium);
 }
+
 
 .head-nav-split {
     height: 100%;
