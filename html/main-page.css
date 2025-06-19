@@ -6,6 +6,7 @@ body, html {
 
 :root {
     --borderRadius-medium: 0.375rem;
+    --borderRadius-medium-plus: 0.32rem;
     --borderWidth-thin: 0.0625rem;
 
     --borderColor-default: #d1d9e0;
@@ -37,7 +38,7 @@ ul {
 .head-item-border {
     border: solid var(--borderWidth-thin) var(--borderColor-default);
     border-radius: var(--borderRadius-medium);
-    box-shadow: 1px 1px var(--borderColor-default);
+
 }
 
 
@@ -61,7 +62,7 @@ ul {
 
 .head-nav-common-button-div > button:hover {
     background-color: darkgray;
-    border-radius: var(--borderRadius-medium);
+    border-radius: var(--borderRadius-medium-plus);
 }
 
 .head-nav-left-text > button {
@@ -81,13 +82,13 @@ ul {
 }
 
 #combine-button-left {
-    width: 60%;
+    width: 28px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 #combine-button-right {
-    width: 40%;
+    width: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
