@@ -83,6 +83,7 @@ ul {
 
 #combine-button-left {
     width: 28px;
+    border-right: 1px solid var(--borderColor-default);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -133,11 +134,28 @@ ul {
 
 .head-nav-split {
     height: 100%;
+    font-weight: lighter;
 }
 
 .head-nav-split > div {
     height: 100%;
     padding-top: 0.15rem;
+}
+
+#two-inner-button-div {
+    width: 48px;
+}
+
+#two-inner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 3px;
+}
+
+.button-inner-span {
+    display: block;
+    width: 55%;
 }
 
 #left-sidebar {
