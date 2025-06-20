@@ -94,6 +94,10 @@ ul {
     border-bottom-left-radius: 0;
 }
 
+#combine-button-right > i {
+    font-size: 0.5rem;
+}
+
 #header-nav-right {
     display: flex;
     gap: 8px;
@@ -131,10 +135,15 @@ ul {
     border-radius: var(--borderRadius-medium);
 }
 
+.type-to-search-button-blank {
+    height: 100%;
+    width: 7rem;
+}
 
 .head-nav-split {
     height: 100%;
     font-weight: lighter;
+    margin: auto 0.2rem;
 }
 
 .head-nav-split > div {
