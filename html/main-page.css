@@ -94,8 +94,16 @@ ul {
     border-bottom-left-radius: 0;
 }
 
-#combine-button-right > i {
+.bi-icon-small {
     font-size: 0.5rem;
+}
+
+.bi-icon-middle {
+    font-size: 1rem;
+}
+
+.bi-icon-big {
+    font-size: 1.25rem;
 }
 
 #header-nav-right {
