@@ -1,0 +1,32 @@
+
+#left-sidebar {
+    flex: 15%;
+    padding: 2rem 1.5rem;
+}
+
+#left-sidebar-title {
+    align-items: center;
+    height: 1.5rem;
+}
+
+.left-sidebar-li {
+    display: flex;
+}
+
+.left-sidebar-title-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.left-sidebar-title-button-div {
+    height: 100%;
+}
+
+.left-sidebar-title-button {
+    height: 100%;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: var(--borderRadius-medium);
+}
+

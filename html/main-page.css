@@ -175,8 +175,8 @@ ul {
     width: 55%;
 }
 
-#left-sidebar {
-    flex: 25%;
+#content-display {
+    width: 100%;
 }
 
 #content {
@@ -185,14 +185,6 @@ ul {
 
 #right-sidebar {
     flex: 25%;
-}
-
-#left-sidebar-title {
-
-}
-
-.left-sidebar-li {
-    display: flex;
 }
 
 #home-section {
