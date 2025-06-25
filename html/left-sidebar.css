@@ -45,3 +45,27 @@
     color: dimgrey;
 }
 
+.left-sidebar-ul {
+    margin: 0;
+}
+
+.left-sidebar-li {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem auto;
+}
+
+.left-user-icon-button {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.left-user-project-name {
+    height: 1.7rem;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
