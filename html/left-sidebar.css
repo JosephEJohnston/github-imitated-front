@@ -2,6 +2,7 @@
 #left-sidebar {
     flex: 15%;
     padding: 2rem 1.5rem;
+    border-right: 0.05rem solid darkgray;
 }
 
 #left-sidebar-title {
@@ -69,3 +70,9 @@
     display: inline-block;
 }
 
+.left-show-more {
+    border: none;
+    background-color: transparent;
+    font-size: 0.75rem;
+    color: darkgray;
+}
