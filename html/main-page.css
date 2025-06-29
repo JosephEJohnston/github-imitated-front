@@ -181,24 +181,12 @@ ul {
     width: 100%;
 }
 
-#content {
-    flex: 50%;
-}
-
 #right-sidebar {
     flex: 25%;
 }
 
 #home-section {
 
-}
-
-#home-section-ask-copilot {
-    display: flex;
-}
-
-#home-section-button-list {
-    display: flex;
 }
 
 #feed-section-title {
