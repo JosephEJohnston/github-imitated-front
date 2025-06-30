@@ -37,3 +37,37 @@
 #home-section-button-list {
     display: flex;
 }
+
+#home-section-button-list > button {
+    height: 2.5rem;
+    padding: 0.7rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: 0.05rem solid darkgray;
+    border-radius: 1rem;
+    box-shadow: 1px 1px var(--borderColor-default);
+    transition-duration: 0.2s;
+}
+
+#home-section-button-list > button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.home-section-span {
+    margin: 0 0.2rem;
+}
+
+.home-section-icon-first {
+    color: purple;
+}
+
+.home-section-icon-second {
+    color: darkgray;
+}
+
+.home-section-icon-third {
+    color: green;
+}
+
