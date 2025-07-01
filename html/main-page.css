@@ -40,7 +40,6 @@ ul {
 .head-item-border {
     border: solid var(--borderWidth-thin) var(--borderColor-default);
     border-radius: var(--borderRadius-medium);
-
 }
 
 
@@ -187,11 +186,6 @@ ul {
 
 #home-section {
 
-}
-
-#feed-section-title {
-    display: flex;
-    justify-content: space-between;
 }
 
 .feed-section-content-header {

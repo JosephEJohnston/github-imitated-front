@@ -36,6 +36,7 @@
 
 #home-section-button-list {
     display: flex;
+    margin: 0.5rem 0;
 }
 
 #home-section-button-list > button {
@@ -69,5 +70,34 @@
 
 .home-section-icon-third {
     color: green;
+}
+
+#feed-section-title {
+    height: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feed-section {
+    margin: 1rem 0;
+}
+
+#feed-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#feed-filter-button {
+    height: 1.6rem;
+    width: 4.5rem;
+    background-color: var(--backgroundColor);
+    border-radius: 0.5rem;
+    border: 1px solid darkgray;
+}
+
+#feed-filter-button:hover {
+    background-color: darkgray;
+    cursor: pointer;
 }
 
