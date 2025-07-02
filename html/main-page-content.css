@@ -101,3 +101,46 @@
     cursor: pointer;
 }
 
+.feed-section-content {
+    border: 1px solid darkgray;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.feed-section-content-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    color: dimgrey;
+}
+
+.feed-section-content-header-left {
+    display: flex;
+}
+
+.treading-icon {
+
+}
+
+.treading-title {
+    padding: 0 0.5rem;
+}
+
+.treading-see-more {
+    padding: 0 0.5rem;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.dot-more {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.dot-more:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+

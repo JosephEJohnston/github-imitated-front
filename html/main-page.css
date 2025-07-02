@@ -188,14 +188,6 @@ ul {
 
 }
 
-.feed-section-content-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.feed-section-content-header-left {
-    display: flex;
-}
 
 .display-flex {
     display: flex;
