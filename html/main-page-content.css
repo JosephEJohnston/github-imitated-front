@@ -153,3 +153,30 @@
 .treading-section {
     margin: 0.5rem 0;
 }
+
+.feed-user-icon {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.feed-user-name {
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.feed-title {
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-right-button-list {
+    width: 6rem;
+}
+
+.feed-right-button-star {
+    margin-right: 0;
+}
+
+.feed-right-button-down {
+}
