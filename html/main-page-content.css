@@ -144,3 +144,12 @@
     cursor: pointer;
 }
 
+.hidden-span {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.treading-section {
+    margin: 0.5rem 0;
+}
