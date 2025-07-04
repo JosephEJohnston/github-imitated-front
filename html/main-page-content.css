@@ -171,12 +171,34 @@
 }
 
 .feed-right-button-list {
-    width: 6rem;
+    border: 1px solid darkgray;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    display: flex;
 }
 
 .feed-right-button-star {
-    margin-right: 0;
+    height: calc(1.5rem);
+    width: 5rem;
+    background-color: var(--backgroundColor);
+    border: none;
 }
 
 .feed-right-button-down {
+    height: calc(1.5rem);
+    width: 2rem;
+    margin-left: -5px;
+    background-color: var(--backgroundColor);
+    border-left: 1px solid darkgray;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.down-icon {
+    font-size: 0.6rem;
+}
+
+.star-text {
+    margin-left: 0.5rem;
 }
