@@ -202,3 +202,32 @@
 .star-text {
     margin-left: 0.5rem;
 }
+
+.feed-desc {
+    margin: 0.4rem 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.feed-bottom-button-list {
+    align-items: center;
+}
+
+.feed-language {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+
+.feed-language-star {
+    height: 1.5rem;
+    padding: 0;
+    border: none;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
