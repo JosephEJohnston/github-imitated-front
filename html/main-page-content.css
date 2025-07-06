@@ -248,3 +248,31 @@
 
 }
 
+#content-footer {
+    font-size: 0.75rem;
+    padding: 3rem 2rem;
+    align-items: center;
+    color: grey;
+}
+
+.bottom-github {
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: none;
+}
+
+.bottom-a {
+    text-decoration: none;
+    outline: none;
+}
+
+.bottom-a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bottom-a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
