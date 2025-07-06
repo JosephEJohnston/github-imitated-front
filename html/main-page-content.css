@@ -105,6 +105,7 @@
     border: 1px solid darkgray;
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .feed-section-content-header {
@@ -214,11 +215,12 @@
 }
 
 .feed-bottom-button-list {
+    margin-top: 0.5rem;
     align-items: center;
 }
 
 .feed-language {
-    height: 1.5rem;
+    height: 1.2rem;
     display: flex;
     align-items: center;
     font-size: 0.8rem;
@@ -228,7 +230,7 @@
 
 
 .feed-language-star {
-    height: 1.5rem;
+    height: 1.2rem;
     padding: 0;
     border: none;
     font-size: 0.8rem;
