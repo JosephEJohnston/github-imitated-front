@@ -103,7 +103,7 @@
 
 .feed-section-content {
     border: 1px solid darkgray;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
@@ -242,5 +242,9 @@
 
 .star-count {
     margin-left: 0.3rem;
+}
+
+#feed-recommend-section {
+
 }
 
