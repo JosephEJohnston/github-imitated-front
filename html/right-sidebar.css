@@ -1,0 +1,19 @@
+
+#right-sidebar {
+    flex: 17.5%;
+    padding: 2rem 1.5rem;
+}
+
+#lastest-changes {
+    border: 1px solid darkgray;
+}
+
+.change-li {
+    border-left: 3px solid darkgray;
+}
+
+.change-text {
+    margin-left: 0.5rem;
+
+}
+
