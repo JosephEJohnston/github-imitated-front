@@ -9,11 +9,25 @@
 }
 
 .change-li {
-    border-left: 3px solid darkgray;
+    margin-left: 1rem;
+    position: relative;
+    display: flex;
+}
+
+.change-li-inner {
+    padding-left: 1rem;
+}
+
+.change-li:before {
+    height: 100%;
+    width: 3px;
+    background-color: black;
+    display: block;
+    content: "";
+    position: absolute;
 }
 
 .change-text {
     margin-left: 0.5rem;
-
 }
 
