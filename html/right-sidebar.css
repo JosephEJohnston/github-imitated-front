@@ -29,11 +29,15 @@
 }
 
 .change-text {
-    margin-left: 0.5rem;
+
 }
 
 .change-li-circle-div {
     margin-left: -0.375rem;
+}
+
+.changelog {
+    margin-left: 0.625rem;
 }
 
 
