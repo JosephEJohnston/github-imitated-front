@@ -142,6 +142,7 @@ ul {
     padding-top: 0.05rem;
     border: 0.1rem solid var(--borderColor-default);
     border-radius: var(--borderRadius-medium);
+    margin: 0 0.2rem;
 }
 
 .type-to-search-button-blank {
