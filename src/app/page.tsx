@@ -93,7 +93,7 @@ export default function Home() {
               <div className="left-sidebar-title-button-div">
                 <button className="left-sidebar-title-button">
                   <span><i className="bi bi-building-fill-add"></i></span>
-                  <span>New</span>
+                  <span className="new-button">New</span>
                 </button>
               </div>
             </div>

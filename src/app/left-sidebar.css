@@ -33,6 +33,10 @@
     border-radius: var(--borderRadius-medium);
 }
 
+.new-button {
+    margin-left: 0.25rem;
+}
+
 .find-rep-input {
     --find-rep-input-border: 0.1rem;
     width: calc(100% - 3 * var(--find-rep-input-border) - 0.6rem);

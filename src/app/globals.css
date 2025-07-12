@@ -1,5 +1,6 @@
-@import "main-page.css";
-@import "main-page-content.css";
-@import "left-sidebar.css";
-@import "right-sidebar.css";
+@import "./main-page.css";
+@import "./main-page-content.css";
+@import "./left-sidebar.css";
+@import "./right-sidebar.css";
+@import "bootstrap-icons";
 
