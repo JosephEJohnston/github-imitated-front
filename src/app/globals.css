@@ -1,4 +1,4 @@
-@import "./main-page-content.css";
+@import "../components/main-page-content.css";
 @import "bootstrap-icons";
 
 body, html {
@@ -29,8 +29,10 @@ ul {
     width: 100%;
 }
 
-#home-section {
-
+#content {
+    box-sizing: border-box;
+    padding: 2.5rem 2.5rem;
+    flex: 57.5%;
 }
 
 .display-flex {
