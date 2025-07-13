@@ -1,4 +1,5 @@
 import React from 'react';
+import "./content-feed.css"
 
 const ContentFeed = () => {
     return (

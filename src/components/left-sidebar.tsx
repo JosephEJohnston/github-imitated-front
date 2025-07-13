@@ -1,3 +1,4 @@
+import "./left-sidebar.css"
 
 export default function LeftSidebar() {
     return (

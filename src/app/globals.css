@@ -1,6 +1,43 @@
-@import "./main-page.css";
 @import "./main-page-content.css";
-@import "./left-sidebar.css";
-@import "./right-sidebar.css";
 @import "bootstrap-icons";
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+:root {
+    --borderRadius-medium: 0.375rem;
+    --borderRadius-medium-plus: 0.32rem;
+    --borderWidth-thin: 0.0625rem;
+
+    --borderColor-default: #d1d9e0;
+    --backgroundColor: #f6f8fa;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-display {
+    display: flex;
+}
+
+#content-display {
+    width: 100%;
+}
+
+#home-section {
+
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
