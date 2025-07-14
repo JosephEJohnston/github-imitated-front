@@ -3,14 +3,14 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--backgroundColor);
-    padding: 16px;
-    height: 32px;
+    padding: 1rem;
+    height: 2rem;
     box-shadow: 1px 1px var(--borderColor-default);
 }
 
 #header-nav-left {
     display: flex;
-    gap: 0.5rem 8px;
+    gap: 0.5rem 0.5rem;
 }
 
 .head-item-border {
@@ -25,7 +25,7 @@
 
 .head-nav-common-button-div {
     background-color: transparent;
-    width: 32px;
+    width: 2rem;
 }
 
 .head-nav-common-button-div > button {
@@ -49,7 +49,8 @@
 }
 
 #combine-button {
-    width: 48px;
+    --combine-button-width: 3rem;
+    width: var(--combine-button-width);
     display: flex;
 }
 
@@ -58,14 +59,16 @@
 }
 
 #combine-button-left {
-    width: 28px;
+    --combine-button-left-width: 1.75rem;
+    width: var(--combine-button-left-width);
     border-right: 1px solid var(--borderColor-default);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 #combine-button-right {
-    width: 20px;
+    width: calc(var(--combine-button-width) -
+                var(--combine-button-left-width));
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -84,12 +87,11 @@
 
 #header-nav-right {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 #type-to-search-div {
     height: 100%;
-
 }
 
 #type-to-search-button {
@@ -137,7 +139,7 @@
 }
 
 #two-inner-button-div {
-    width: 48px;
+    width: 3rem;
 }
 
 #two-inner-button {
