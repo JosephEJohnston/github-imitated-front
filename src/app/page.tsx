@@ -1,9 +1,9 @@
-import Header from "@/components/header";
-import LeftSidebar from "@/components/left-sidebar";
-import ContentHome from "@/components/content-home";
-import ContentFeed from "@/components/content-feed";
-import Footer from "@/components/footer";
-import RightSidebar from "@/components/right-sidebar";
+import Header from "@/components/home/header";
+import LeftSidebar from "@/components/home/left-sidebar";
+import ContentHome from "@/components/home/content-home";
+import ContentFeed from "@/components/home/content-feed";
+import Footer from "@/components/home/footer";
+import RightSidebar from "@/components/home/right-sidebar";
 
 
 export default function Home() {
