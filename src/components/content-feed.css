@@ -110,16 +110,17 @@
 }
 
 .feed-right-button-star {
-    height: calc(1.5rem);
+    --feed-right-button-height: 1.5rem;
+    height: var(--feed-right-button-height);
     width: 5rem;
     background-color: var(--backgroundColor);
     border: none;
 }
 
 .feed-right-button-down {
-    height: calc(1.5rem);
+    height: var(--feed-right-button-height);
     width: 2rem;
-    margin-left: -5px;
+    margin-left: -0.4rem;
     background-color: var(--backgroundColor);
     border-left: 1px solid darkgray;
     border-top: none;
@@ -147,20 +148,23 @@
 }
 
 .feed-language {
-    height: 1.2rem;
+    --feed-language-height: 1.2rem;
+    --feed-language-font-size: 0.8rem;
+
+    height: var(--feed-language-height);
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+    font-size: var(--feed-language-font-size);
+    line-height: var(--feed-language-font-size);
     padding-bottom: 0.1rem;
 }
 
 
 .feed-language-star {
-    height: 1.2rem;
+    height: var(--feed-language-height);
     padding: 0;
     border: none;
-    font-size: 0.8rem;
+    font-size: var(--feed-language-font-size);
     display: flex;
     align-items: center;
     background-color: transparent;

@@ -53,7 +53,8 @@
 }
 
 .change-li-time {
-    color: grey;
+    --change-li-color: grey;
+    color: var(--change-li-color);
     font-size: 0.8rem;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .changelog {
-    color: grey;
+    color: var(--change-li-color);
     font-size: 0.7rem;
     margin-left: 0.35rem;
 }

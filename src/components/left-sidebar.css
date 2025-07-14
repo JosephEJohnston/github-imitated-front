@@ -6,9 +6,10 @@
 }
 
 #left-sidebar-title {
+    --left-common-height: 1.7rem;
     width: 100%;
     align-items: center;
-    height: 1.7rem;
+    height: var(--left-common-height);
 }
 
 .left-sidebar-li {
@@ -43,7 +44,7 @@
     border: var(--find-rep-input-border) solid var(--borderColor-default);
     padding: var(--find-rep-input-border);
     padding-left: 0.6rem;
-    height: 1.7rem;
+    height: var(--left-common-height);
     margin: 0.7rem auto;
     border-radius: var(--borderRadius-medium);
     background-color: var(--backgroundColor);
@@ -62,14 +63,14 @@
 
 .left-user-icon-button {
     width: 1.7rem;
-    height: 1.7rem;
+    height: var(--left-common-height);
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
 .left-user-project-name {
-    height: 1.7rem;
+    height: var(--left-common-height);
     font-size: 0.85rem;
     display: inline-block;
 }
