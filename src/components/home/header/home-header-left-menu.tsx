@@ -8,7 +8,7 @@ const HomeHeaderLeftMenu = () => {
     const [flag, setFlag] = useState(-1)
 
     const menuShowClass =
-        flag === -1 ? $styles.menuHide : ``;
+        flag === -1 ? $styles.menuHide : $styles.menuShow;
 
     return (
         <>
