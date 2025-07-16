@@ -1,5 +1,10 @@
 
-.menu {
-    color: green;
+.menuHide {
+    display: none;
 }
+
+.menu {
+    display: none;
+}
+
 
