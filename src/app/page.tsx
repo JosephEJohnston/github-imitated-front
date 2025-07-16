@@ -1,4 +1,4 @@
-import Header from "@/components/home/header";
+import Header from "@/components/home/header/header";
 import LeftSidebar from "@/components/home/left-sidebar";
 import ContentHome from "@/components/home/content-home";
 import ContentFeed from "@/components/home/content-feed";

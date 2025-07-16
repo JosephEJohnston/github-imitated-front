@@ -1,4 +1,5 @@
 import "./header.css"
+import HomeHeaderLeftMenu from "@/components/home/header/home-header-left-menu";
 
 export default function Header() {
     return (
@@ -6,11 +7,7 @@ export default function Header() {
             <header>
                 <nav id="header-nav">
                     <div id="header-nav-left">
-                        <div className="head-nav-common-button-div head-item-border">
-                            <button>
-                                <i className="bi bi-list"></i>
-                            </button>
-                        </div>
+                        <HomeHeaderLeftMenu />
                         <div className="head-nav-common-button-div head-item-border">
                             <button>
                                 <i className="bi bi-github"></i>
