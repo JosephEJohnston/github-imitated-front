@@ -30,6 +30,7 @@
 
 .change-li-inner {
     padding-left: 1rem;
+    z-index: var(--min-z-index);
 }
 
 .change-li:before {

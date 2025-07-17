@@ -13,6 +13,10 @@ body, html {
 
     --borderColor-default: #d1d9e0;
     --backgroundColor: #f6f8fa;
+
+    --min-z-index: -1;
+    --normal-z-index: 0;
+    --one-z-index: 1;
 }
 
 ul {
