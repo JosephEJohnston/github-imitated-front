@@ -1,3 +1,6 @@
+@value --fill-height: 100vh;
+@value --fill-width: 100vw;
+@value --menu-width: 18vw;
 
 .menuShow {
     display: block;
@@ -7,8 +10,29 @@
     display: none;
 }
 
-.menu {
-
+.fill-height {
+    height: --fill-height;
 }
 
+.menuContainer {
+    display: flex;
+    height: --fill-height;
+    width: --fill-width;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu {
+    height: --fill-height;
+    width: --menu-width;
+    background-color: white;
+}
+
+.menuBackDrop {
+    height: --fill-height;
+    width: calc(--fill-width - --menu-width);
+    background-color: cadetblue;
+    opacity: 0.5;
+}
 

@@ -12,7 +12,10 @@ const HomeHeaderLeftMenu = () => {
 
     return (
         <>
-            <div className={classNames($styles.menu, menuShowClass)}>111</div>
+            <div className={classNames($styles.menuContainer, menuShowClass)}>
+                <div className={$styles.menu}>111</div>
+                <div className={$styles.menuBackDrop}></div>
+            </div>
             <div className="head-nav-common-button-div head-item-border">
                 <button onClick={() => setFlag(-flag)}>
                     <i className="bi bi-list"></i>
