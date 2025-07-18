@@ -14,14 +14,17 @@
     height: --fill-height;
 }
 
-.menuContainer {
-    display: flex;
+.menuShowContainer {
     height: --fill-height;
     width: --fill-width;
     position: fixed;
     left: 0;
     top: 0;
     z-index: var(--one-z-index);
+}
+
+.menuContainer {
+    display: flex;
 }
 
 .menu {

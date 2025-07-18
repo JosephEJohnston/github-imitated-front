@@ -1,25 +1,23 @@
-'use client'
-
-import $styles from './home-header-left-menu.module.css'
-import React, {useState} from 'react';
+import React from 'react';
 import classNames from "classnames";
+import $styles from "@/components/home/header/home-header-left-menu.module.css";
 
-const HomeHeaderLeftMenu = () => {
-    const [flag, setFlag] = useState(-1)
+const HomeHeaderLeftMenu = (
+    { showFlag, showControlFunction } : { showFlag : number , showControlFunction : () => void }
+) => {
 
     const menuShowClass =
-        flag === -1 ? $styles.menuHide : $styles.menuShow;
+        showFlag === -1 ? $styles.menuHide : $styles.menuShow;
 
     return (
         <>
-            <div className={classNames($styles.menuContainer, menuShowClass)}>
-                <div className={$styles.menu}>111</div>
-                <div className={$styles.menuBackDrop}></div>
-            </div>
-            <div className="head-nav-common-button-div head-item-border">
-                <button onClick={() => setFlag(-flag)}>
-                    <i className="bi bi-list"></i>
-                </button>
+            <div className={classNames($styles.menuShowContainer, menuShowClass)}>
+                <div className={$styles.menuContainer}>
+                    <div className={$styles.menu}>
+
+                    </div>
+                    <div onClick={showControlFunction} className={$styles.menuBackDrop}></div>
+                </div>
             </div>
         </>
     );
