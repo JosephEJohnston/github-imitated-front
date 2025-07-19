@@ -7,7 +7,7 @@ export default function Header() {
             <header>
                 <nav id="header-nav">
                     <div id="header-nav-left">
-                        <HomeHeaderLeftMenuButton />
+                        <HomeHeaderLeftMenuButton/>
                         <div className="head-nav-common-button-div head-item-border">
                             <button>
                                 <i className="bi bi-github"></i>
@@ -25,14 +25,14 @@ export default function Header() {
                     <div id="header-nav-right">
                         <div id="type-to-search-div" className="head-item-border">
                             <button id="type-to-search-button">
-                    <span className="type-to-search-button-icon">
-                        <i className="bi bi-search"></i>
-                    </span>
+                                <span className="type-to-search-button-icon">
+                                    <i className="bi bi-search"></i>
+                                </span>
                                 <span className="type-to-search-button-text">
-                        Type
-                        <span className="slash">/</span>
-                         to search
-                    </span>
+                                    Type
+                                    <span className="slash">/</span>
+                                     to search
+                                </span>
                                 <span className="type-to-search-button-blank"></span>
                             </button>
                         </div>
@@ -49,12 +49,12 @@ export default function Header() {
                         </div>
                         <div id="two-inner-button-div" className="head-nav-common-button-div head-item-border">
                             <button id="two-inner-button">
-                    <span className="button-inner-span">
-                        <i className="bi bi-plus bi-icon-middle"></i>
-                    </span>
-                                <span className="button-inner-span">
-                        <i className="bi bi-chevron-down bi-icon-small"></i>
-                    </span>
+                            <span className="button-inner-span">
+                                <i className="bi bi-plus bi-icon-middle"></i>
+                            </span>
+                            <span className="button-inner-span">
+                                <i className="bi bi-chevron-down bi-icon-small"></i>
+                            </span>
                             </button>
                         </div>
                         <div className="head-nav-common-button-div head-item-border">
