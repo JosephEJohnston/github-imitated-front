@@ -15,9 +15,9 @@ const HomeHeaderLeftMenu = (
             <div className={classNames($styles.menuShowContainer, menuShowClass)}>
                 <div className={$styles.menuContainer}>
                     <div className={$styles.menu}>
-                        <div>
-                            <span><i className="bi bi-github"></i></span>
-                            <button>x</button>
+                        <div className={classNames($styles.flexSpaceBetween)}>
+                            <div className={$styles.topIcon}><i className="bi bi-github"></i></div>
+                            <div className={$styles.topClose}><i className="bi bi-x"></i></div>
                         </div>
                         <div>
                             <div>
@@ -60,7 +60,7 @@ const HomeHeaderLeftMenu = (
                             </div>
 
                             <hr/>
-                            <div>
+                            <div className={classNames($styles.flexSpaceBetween)}>
                                 <div>Repositories</div>
                                 <div><i className="bi bi-search"></i></div>
                             </div>

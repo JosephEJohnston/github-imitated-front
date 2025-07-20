@@ -31,6 +31,36 @@
     height: --fill-height;
     width: --menu-width;
     background-color: white;
+    padding: 0.7rem 1.5rem;
+    box-sizing: border-box;
+}
+
+
+.topIcon {
+    font-size: 1.8rem;
+}
+
+.topClose {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+.topClose:hover {
+    background-color: var(--borderColor-hover);
+}
+
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menuBackDrop {
@@ -39,4 +69,3 @@
     background-color: cadetblue;
     opacity: 0.5;
 }
-
