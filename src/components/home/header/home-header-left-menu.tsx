@@ -59,7 +59,7 @@ const HomeHeaderLeftMenu = (
                             </div>
 
                             <hr className={$styles.linkHr}/>
-                            <div className={classNames($styles.flexSpaceBetween)}>
+                            <div className={classNames($styles.flexSpaceBetween, $styles.repositoriesSearchContainer)}>
                                 <div>Repositories</div>
                                 <div><i className="bi bi-search"></i></div>
                             </div>

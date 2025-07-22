@@ -84,6 +84,10 @@
     margin: 0.75rem -1rem;
 }
 
+.repositoriesSearchContainer {
+    font-size: 0.75rem;
+}
+
 .menuBackDrop {
     height: --fill-height;
     width: calc(--fill-width - --menu-width);
