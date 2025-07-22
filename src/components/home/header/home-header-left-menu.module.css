@@ -35,9 +35,13 @@
     box-sizing: border-box;
 }
 
+.topDiv {
+    margin-bottom: 2rem;
+}
 
 .topIcon {
     font-size: 1.8rem;
+    margin-left: -0.4rem;
 }
 
 .topClose {
@@ -61,6 +65,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.linkItemContainer {
+
+}
+
+.linkItem {
+    margin: 0.5rem 0;
+}
+
+.linkItemName {
+    margin-left: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.linkHr {
+    margin: 0.75rem -1rem;
 }
 
 .menuBackDrop {

@@ -15,51 +15,50 @@ const HomeHeaderLeftMenu = (
             <div className={classNames($styles.menuShowContainer, menuShowClass)}>
                 <div className={$styles.menuContainer}>
                     <div className={$styles.menu}>
-                        <div className={classNames($styles.flexSpaceBetween)}>
+                        <div className={classNames($styles.flexSpaceBetween, $styles.topDiv)}>
                             <div className={$styles.topIcon}><i className="bi bi-github"></i></div>
                             <div className={$styles.topClose}><i className="bi bi-x"></i></div>
                         </div>
-                        <div>
-                            <div>
+                        <div className={$styles.linkItemContainer}>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-house"></i></span>
-                                <span>Home</span>
+                                <span className={$styles.linkItemName}>Home</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-cup-hot"></i></span>
-                                <span>Issues</span>
+                                <span className={$styles.linkItemName}>Issues</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-bezier2 bi-icon-middle"></i></span>
-                                <span>Pull requests</span>
+                                <span className={$styles.linkItemName}>Pull requests</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-menu-button-wide"></i></span>
-                                <span>Projects</span>
+                                <span className={$styles.linkItemName}>Projects</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-chat-right-text"></i></span>
-                                <span>Discussions</span>
+                                <span className={$styles.linkItemName}>Discussions</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-code-square"></i></span>
-                                <span>Codespaces</span>
+                                <span className={$styles.linkItemName}>Codespaces</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-robot"></i></span>
-                                <span>Copilot</span>
+                                <span className={$styles.linkItemName}>Copilot</span>
                             </div>
-
-                            <hr/>
-                            <div>
+                            <hr className={$styles.linkHr}/>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-exclude"></i></span>
-                                <span>Explore</span>
+                                <span className={$styles.linkItemName}>Explore</span>
                             </div>
-                            <div>
+                            <div className={$styles.linkItem}>
                                 <span><i className="bi bi-gift"></i></span>
-                                <span>Marketplace</span>
+                                <span className={$styles.linkItemName}>Marketplace</span>
                             </div>
 
-                            <hr/>
+                            <hr className={$styles.linkHr}/>
                             <div className={classNames($styles.flexSpaceBetween)}>
                                 <div>Repositories</div>
                                 <div><i className="bi bi-search"></i></div>
