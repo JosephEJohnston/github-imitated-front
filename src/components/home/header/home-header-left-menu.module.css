@@ -3,11 +3,13 @@
 @value --menu-width: 18vw;
 
 .menuShow {
-    display: block;
+    opacity: 1;
+    transition: opacity 0.2s linear;
 }
 
 .menuHide {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .fill-height {
@@ -21,6 +23,7 @@
     left: 0;
     top: 0;
     z-index: var(--one-z-index);
+    background-color: rgba(190, 209, 213, 0.5);;
 }
 
 .menuContainer {
@@ -33,6 +36,8 @@
     background-color: white;
     padding: 0.7rem 1.5rem;
     box-sizing: border-box;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
 }
 
 .topDiv {
@@ -86,11 +91,38 @@
 
 .repositoriesSearchContainer {
     font-size: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .menuBackDrop {
     height: --fill-height;
     width: calc(--fill-width - --menu-width);
-    background-color: cadetblue;
-    opacity: 0.5;
+}
+
+.menuBottomFont {
+    font-size: 0.8rem;
+}
+
+.menuBottomDeclare {
+    margin-top: 1.5rem;
+}
+
+.menuBottomLinkDiv {
+    margin-top: 0.5rem;
+}
+
+.menuBottomLink {
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menuBottomLink:link {
+    color: deepskyblue;
+}
+
+
+.menuBottomLink:visited {
+    color: deepskyblue;
 }

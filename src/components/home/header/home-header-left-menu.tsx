@@ -64,18 +64,18 @@ const HomeHeaderLeftMenu = (
                                 <div><i className="bi bi-search"></i></div>
                             </div>
                             <UserRepository />
-                            <div>
+                            <div className={classNames($styles.menuBottomFont, $styles.menuBottomDeclare)}>
                                 © 2025 GitHub, Inc.
                             </div>
-                            <div>
-                                <a href="#">About</a>
-                                <a href="#">Blog</a>
-                                <a href="#">Terms</a>
-                                <a href="#">Privacy</a>
-                                <a href="#">Security</a>
-                                <a href="#">Status</a>
-                                <a href="#">Do not share my personal information</a>
-                                <a href="#">Manage Cookies</a>
+                            <div className={classNames($styles.menuBottomFont, $styles.menuBottomLinkDiv)}>
+                                <a className={$styles.menuBottomLink} href="#">About</a>
+                                <a className={$styles.menuBottomLink} href="#">Blog</a>
+                                <a className={$styles.menuBottomLink} href="#">Terms</a>
+                                <a className={$styles.menuBottomLink} href="#">Privacy</a>
+                                <a className={$styles.menuBottomLink} href="#">Security</a>
+                                <a className={$styles.menuBottomLink} href="#">Status</a>
+                                <a className={$styles.menuBottomLink} href="#">Do not share my personal information</a>
+                                <a className={$styles.menuBottomLink} href="#">Manage Cookies</a>
                             </div>
                         </div>
                     </div>
