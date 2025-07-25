@@ -10,11 +10,14 @@ const HomeHeaderLeftMenu = (
     const menuShowClass =
         showFlag === -1 ? $styles.menuHide : $styles.menuShow;
 
+    const menuWidthClass =
+        showFlag === -1 ? $styles.menuWidthHide : $styles.menuWidthShow;
+
     return (
         <>
             <div className={classNames($styles.menuShowContainer, menuShowClass)}>
                 <div className={$styles.menuContainer}>
-                    <div className={$styles.menu}>
+                    <div className={classNames($styles.menu, menuWidthClass)}>
                         <div className={classNames($styles.flexSpaceBetween, $styles.topDiv)}>
                             <div className={$styles.topIcon}><i className="bi bi-github"></i></div>
                             <div className={$styles.topClose}><i className="bi bi-x"></i></div>

@@ -4,7 +4,6 @@
 
 .menuShow {
     opacity: 1;
-    transition: opacity 0.2s linear;
 }
 
 .menuHide {
@@ -32,12 +31,20 @@
 
 .menu {
     height: --fill-height;
-    width: --menu-width;
     background-color: white;
     padding: 0.7rem 1.5rem;
     box-sizing: border-box;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
+    transition: width 0.2s ease;
+}
+
+.menuWidthHide {
+    width: 0;
+}
+
+.menuWidthShow {
+    width: --menu-width;
 }
 
 .topDiv {
