@@ -20,7 +20,7 @@ const HomeHeaderLeftMenu = (
                     <div className={classNames($styles.menu, menuWidthClass)}>
                         <div className={classNames($styles.flexSpaceBetween, $styles.topDiv)}>
                             <div className={$styles.topIcon}><i className="bi bi-github"></i></div>
-                            <div className={$styles.topClose}><i className="bi bi-x"></i></div>
+                            <div onClick={showControlFunction} className={$styles.topClose}><i className="bi bi-x"></i></div>
                         </div>
                         <div className={$styles.linkItemContainer}>
                             <div className={$styles.linkItem}>

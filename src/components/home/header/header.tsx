@@ -1,5 +1,6 @@
 import "./header.css"
 import HomeHeaderLeftMenuButton from "@/components/home/header/home-header-left-menu-button";
+import TypeToSearch from "@/components/home/header/type-to-search";
 
 export default function Header() {
     return (
@@ -23,19 +24,7 @@ export default function Header() {
 
                     </div>
                     <div id="header-nav-right">
-                        <div id="type-to-search-div" className="head-item-border">
-                            <button id="type-to-search-button">
-                                <span className="type-to-search-button-icon">
-                                    <i className="bi bi-search"></i>
-                                </span>
-                                <span className="type-to-search-button-text">
-                                    Type
-                                    <span className="slash">/</span>
-                                     to search
-                                </span>
-                                <span className="type-to-search-button-blank"></span>
-                            </button>
-                        </div>
+                        <TypeToSearch />
                         <div id="combine-button" className="head-nav-common-button-div head-item-border">
                             <button id="combine-button-left">
                                 <i className="bi bi-robot"></i>
