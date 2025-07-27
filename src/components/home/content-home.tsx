@@ -13,19 +13,19 @@ const ContentHome = () => {
                     </button>
                 </div>
                 <div id="home-section-button-list">
-                    <button>
+                    <button className="home-section-button">
                         <span className="home-section-span">
                             <i className="bi bi-eye home-section-icon-first"></i>
                         </span>
                         <span>Create a profile README for me</span>
                     </button>
-                    <button>
+                    <button className="home-section-button">
                         <span className="home-section-span">
                             <i className="bi bi-chevron-bar-right home-section-icon-second"></i>
                         </span>
                         <span>Get code feedback</span>
                     </button>
-                    <button>
+                    <button className="home-section-button">
                         <span className="home-section-span">
                             <i className="bi bi-bezier2 home-section-icon-third"></i>
                         </span>

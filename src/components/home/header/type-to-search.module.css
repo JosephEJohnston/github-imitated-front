@@ -11,6 +11,7 @@
 .typeToSearchButton > span {
     padding: 0.2rem;
     display: block;
+    white-space: nowrap;
 }
 
 .typeToSearchButtonText {

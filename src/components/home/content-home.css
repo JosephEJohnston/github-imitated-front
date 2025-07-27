@@ -50,6 +50,10 @@
     cursor: pointer;
 }
 
+.home-section-button {
+    white-space: nowrap;
+}
+
 .home-section-span {
     margin: 0 0.2rem;
 }
