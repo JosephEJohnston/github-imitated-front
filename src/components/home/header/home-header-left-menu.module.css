@@ -36,7 +36,7 @@
     box-sizing: border-box;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
-    transition: width 0.2s ease;
+    transition: width 0.5s ease;
 }
 
 .menuWidthHide {
@@ -116,6 +116,13 @@
 
 .menuBottomLinkDiv {
     margin-top: 0.5rem;
+}
+
+.menuBottomLinkDiv {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .menuBottomLink {

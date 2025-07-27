@@ -71,14 +71,20 @@ const HomeHeaderLeftMenu = (
                                 © 2025 GitHub, Inc.
                             </div>
                             <div className={classNames($styles.menuBottomFont, $styles.menuBottomLinkDiv)}>
-                                <a className={$styles.menuBottomLink} href="#">About</a>
-                                <a className={$styles.menuBottomLink} href="#">Blog</a>
-                                <a className={$styles.menuBottomLink} href="#">Terms</a>
-                                <a className={$styles.menuBottomLink} href="#">Privacy</a>
-                                <a className={$styles.menuBottomLink} href="#">Security</a>
-                                <a className={$styles.menuBottomLink} href="#">Status</a>
-                                <a className={$styles.menuBottomLink} href="#">Do not share my personal information</a>
-                                <a className={$styles.menuBottomLink} href="#">Manage Cookies</a>
+                                <div className={$styles.menuBottomLinkDiv}>
+                                    <a className={$styles.menuBottomLink} href="#">About</a>
+                                    <a className={$styles.menuBottomLink} href="#">Blog</a>
+                                    <a className={$styles.menuBottomLink} href="#">Terms</a>
+                                    <a className={$styles.menuBottomLink} href="#">Privacy</a>
+                                    <a className={$styles.menuBottomLink} href="#">Security</a>
+                                    <a className={$styles.menuBottomLink} href="#">Status</a>
+                                </div>
+                                <div className={$styles.menuBottomLinkDiv}>
+                                    <a className={$styles.menuBottomLink} href="#">Do not share my personal information</a>
+                                </div>
+                                <div className={$styles.menuBottomLinkDiv}>
+                                    <a className={$styles.menuBottomLink} href="#">Manage Cookies</a>
+                                </div>
                             </div>
                         </div>
                     </div>
