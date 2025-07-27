@@ -12,10 +12,6 @@
     height: var(--left-common-height);
 }
 
-.left-sidebar-li {
-    display: flex;
-}
-
 .left-sidebar-title-name {
     font-size: 0.8rem;
     font-weight: bold;
@@ -61,18 +57,30 @@
     margin: 0.4rem auto;
 }
 
-.left-user-icon-button {
+.left-li-btn-div {
     width: 1.7rem;
+}
+
+.left-user-icon-button {
+    width: 100%;
     height: var(--left-common-height);
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
+.left-li-span-div {
+    width: calc(100% - 2rem);
+}
+
 .left-user-project-name {
+    width: 100%;
     height: var(--left-common-height);
     font-size: 0.85rem;
     display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .left-show-more {

@@ -5,32 +5,32 @@ const UserRepository = () => {
         <>
             <ul className="left-sidebar-ul">
                 <li className="left-sidebar-li">
-                    <div>
+                    <div className="left-li-btn-div">
                         <button className="left-user-icon-button">
                             <i className="bi bi-person bi-icon-big"></i>
                         </button>
                     </div>
-                    <div>
+                    <div className="left-li-span-div">
                         <span className="left-user-project-name">JosephEJohnston/learn-ts-fullstack-nextapp</span>
                     </div>
                 </li>
                 <li className="left-sidebar-li">
-                    <div>
+                    <div className="left-li-btn-div">
                         <button className="left-user-icon-button">
                             <i className="bi bi-person bi-icon-big"></i>
                         </button>
                     </div>
-                    <div>
+                    <div className="left-li-span-div">
                         <span className="left-user-project-name">JosephEJohnston/bar-count</span>
                     </div>
                 </li>
                 <li className="left-sidebar-li">
-                    <div>
+                    <div className="left-li-btn-div">
                         <button className="left-user-icon-button">
                             <i className="bi bi-person bi-icon-big"></i>
                         </button>
                     </div>
-                    <div>
+                    <div className="left-li-span-div">
                         <span className="left-user-project-name">JosephEJohnston/imitate-todoist</span>
                     </div>
                 </li>
