@@ -25,14 +25,6 @@ ul {
     padding: 0;
 }
 
-.content-display {
-    display: flex;
-}
-
-#content-display {
-    width: 100%;
-}
-
 #content {
     box-sizing: border-box;
     padding: 2.5rem 2.5rem;
