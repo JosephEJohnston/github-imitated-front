@@ -4,7 +4,7 @@ import "./right-sidebar.css"
 const RightSidebar = () => {
     return (
         <>
-            <aside id="right-sidebar">
+            <div id="right-sidebar">
                 <div id="lastest-changes-container">
                     <div className="lastest-changes-title">Lastest changes</div>
                     <ul className="change-ul">
@@ -60,7 +60,7 @@ const RightSidebar = () => {
                         </li>
                     </ul>
                 </div>
-            </aside>
+            </div>
         </>
     );
 };

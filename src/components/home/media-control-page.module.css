@@ -1,5 +1,21 @@
 
 .contentDisplay {
     display: flex;
+    height: 100%;
 }
 
+.contentItem {
+    height: 100%;
+}
+
+.middleContent {
+    flex: 75%;
+}
+
+.leftSideBar {
+    flex: 15%;
+}
+
+.rightSideBar {
+
+}

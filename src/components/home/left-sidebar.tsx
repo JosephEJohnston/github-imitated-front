@@ -4,7 +4,7 @@ import UserRepository from "@/components/home/user-repository";
 export default function LeftSidebar() {
     return (
         <>
-            <aside id="left-sidebar">
+            <div id="left-sidebar">
                 <div id="left-sidebar-title" className="flex-space-between">
                     <div className="left-sidebar-title-name">
                         Top repositories
@@ -22,7 +22,7 @@ export default function LeftSidebar() {
                     </label>
                 </div>
                 <UserRepository />
-            </aside>
+            </div>
         </>
     )
 }

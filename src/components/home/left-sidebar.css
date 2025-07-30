@@ -1,8 +1,8 @@
 
 #left-sidebar {
-    flex: 15%;
     padding: 2rem 1.5rem;
     border-right: 0.05rem solid darkgray;
+    height: 100%;
 }
 
 #left-sidebar-title {
