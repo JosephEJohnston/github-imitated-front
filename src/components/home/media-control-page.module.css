@@ -1,22 +1,63 @@
+/* 1400, 768 */
+
+@media (min-width: 1400px) {
+    .contentMedia {
+        display: flex;
+    }
+
+    .contentItem {
+        min-height: 100vh;
+    }
+
+    .rightSideBar {
+
+    }
+
+    .leftSideBar {
+        flex: 15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .contentMedia {
+        display: flex;
+    }
+
+    .contentItem {
+        min-height: 100vh;
+    }
+
+    .rightSideBar {
+        display: none;
+    }
+
+    .leftSideBar {
+        flex: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentMedia {
+        display: block;
+    }
+
+    .contentItem {
+
+    }
+
+    .rightSideBar {
+        display: none;
+    }
+}
+
 
 .contentDisplay {
-    display: flex;
     min-height: 100vh;
-    /*overflow: hidden;*/
 }
 
-.contentItem {
-    min-height: 100vh;
-}
 
 .middleContent {
     flex: 75%;
 }
 
-.leftSideBar {
-    flex: 15%;
-}
 
-.rightSideBar {
-
-}

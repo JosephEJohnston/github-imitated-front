@@ -11,7 +11,7 @@ interface Props {
 const MediaControlPage = (props : Props) => {
     return (
         <>
-            <div className={$style.contentDisplay}>
+            <div className={classNames($style.contentDisplay, $style.contentMedia)}>
                 <aside className={classNames($style.contentItem, $style.leftSideBar)}>
                     {props.leftSideBar}
                 </aside>
