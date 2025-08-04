@@ -1,7 +1,33 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useRef} from 'react';
 import "./content-home.css"
+import ResizeObserver from "resize-observer-polyfill";
 
 const ContentHome = () => {
+    const resizeRef = useRef<HTMLDivElement>(null);
+
+
+    useEffect(() => {
+        const current = resizeRef.current;
+
+        const observer = new ResizeObserver(() => {
+            const scrollWidth = current?.scrollWidth || 0;
+            const clientWidth = current?.clientWidth || 0;
+            if (scrollWidth > clientWidth) {
+                console.log("Overflow")
+            } else {
+                console.log("Not Overflow")
+            }
+        });
+
+        current && observer.observe(current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [resizeRef])
+
     return (
         <>
             <div id="home-section">
@@ -12,7 +38,7 @@ const ContentHome = () => {
                         <i className="bi bi-cursor"></i>
                     </button>
                 </div>
-                <div id="home-section-button-list">
+                <div id="home-section-button-list" ref={resizeRef}>
                     <button className="home-section-button">
                         <span className="home-section-span">
                             <i className="bi bi-eye home-section-icon-first"></i>

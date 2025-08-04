@@ -31,6 +31,8 @@
 #home-section-button-list {
     display: flex;
     margin: 0.5rem 0;
+    white-space: nowrap;
+
 }
 
 #home-section-button-list > button {
