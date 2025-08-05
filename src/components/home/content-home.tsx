@@ -1,32 +1,27 @@
 'use client'
 
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import "./content-home.css"
-import ResizeObserver from "resize-observer-polyfill";
+import $style from "./content-home.module.css"
+import classNames from "classnames";
 
 const ContentHome = () => {
-    const resizeRef = useRef<HTMLDivElement>(null);
+    const buttonListRef = useRef<HTMLDivElement>(null);
+    const firstButtonRef = useRef<HTMLButtonElement>(null);
 
+    const parentWidth = buttonListRef.current?.clientWidth || 0;
+    console.log("buttonListRef: " + parentWidth);
 
+    const sonWidth = firstButtonRef.current?.clientWidth || 0;
+    console.log("firstButtonRef: " + sonWidth);
     useEffect(() => {
-        const current = resizeRef.current;
 
-        const observer = new ResizeObserver(() => {
-            const scrollWidth = current?.scrollWidth || 0;
-            const clientWidth = current?.clientWidth || 0;
-            if (scrollWidth > clientWidth) {
-                console.log("Overflow")
-            } else {
-                console.log("Not Overflow")
-            }
-        });
-
-        current && observer.observe(current);
-
-        return () => {
-            observer.disconnect();
-        };
-    }, [resizeRef])
+        if (parentWidth > sonWidth) {
+            console.log("Bigger");
+        } else {
+            console.log("Smaller");
+        }
+    }, [parentWidth]);
 
     return (
         <>
@@ -38,20 +33,20 @@ const ContentHome = () => {
                         <i className="bi bi-cursor"></i>
                     </button>
                 </div>
-                <div id="home-section-button-list" ref={resizeRef}>
-                    <button className="home-section-button">
+                <div id="home-section-button-list" ref={buttonListRef}>
+                    <button ref={firstButtonRef} className={classNames($style.homeSectionButton)}>
                         <span className="home-section-span">
                             <i className="bi bi-eye home-section-icon-first"></i>
                         </span>
                         <span>Create a profile README for me</span>
                     </button>
-                    <button className="home-section-button">
+                    <button className={classNames($style.homeSectionButton)}>
                         <span className="home-section-span">
                             <i className="bi bi-chevron-bar-right home-section-icon-second"></i>
                         </span>
                         <span>Get code feedback</span>
                     </button>
-                    <button className="home-section-button">
+                    <button className={classNames($style.homeSectionButton)}>
                         <span className="home-section-span">
                             <i className="bi bi-bezier2 home-section-icon-third"></i>
                         </span>
