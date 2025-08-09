@@ -1,4 +1,4 @@
-import "../../../app/globals.css";
+import "@/components/global-media.css";
 import React from 'react';
 import $style from '@/components/home/header/type-to-search.module.css'
 import classNames from "classnames";
@@ -6,7 +6,7 @@ import classNames from "classnames";
 const TypeToSearch = () => {
     return (
         <>
-            <div id="type-to-search-div" className={classNames('head-item-border', 'block-bigger-middle')}>
+            <div id="type-to-search-div" className={classNames('head-item-border', 'block-only-big')}>
                 <button className={$style.typeToSearchButton}>
                     <span>
                         <i className="bi bi-search"></i>
