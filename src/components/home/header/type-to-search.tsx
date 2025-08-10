@@ -6,7 +6,7 @@ import classNames from "classnames";
 const TypeToSearch = () => {
     return (
         <>
-            <div id="type-to-search-div" className={classNames('head-item-border', 'block-only-big')}>
+            <div id="type-to-search-div" className={classNames('head-item-border', 'block-more-than-big')}>
                 <button className={$style.typeToSearchButton}>
                     <span>
                         <i className="bi bi-search"></i>
@@ -19,6 +19,14 @@ const TypeToSearch = () => {
                     <span className={$style.typeToSearchButtonBlank}></span>
                 </button>
             </div>
+            <div className={classNames('head-item-border', 'block-less-than-big')}>
+                <button className={$style.typeToSearchButton}>
+                    <span>
+                        <i className="bi bi-search"></i>
+                    </span>
+                </button>
+            </div>
+
         </>
     );
 };
