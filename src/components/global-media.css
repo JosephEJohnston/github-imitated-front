@@ -10,6 +10,10 @@
     display: none;
 }
 
+.block-more-than-small {
+
+}
+
 .block-only-small {
     display: none;
 }
@@ -51,11 +55,15 @@
         display: none;
     }
 
+    .block-less-than-big {
+        display: block;
+    }
+
     .block-only-small {
         display: block;
     }
 
-    .block-less-than-big {
-        display: block;
+    .block-more-than-small {
+        display: none !important;
     }
 }
