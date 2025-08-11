@@ -4,6 +4,9 @@
     padding: 3rem 2rem;
     align-items: center;
     color: grey;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .bottom-github {

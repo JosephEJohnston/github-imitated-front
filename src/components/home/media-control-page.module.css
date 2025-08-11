@@ -14,7 +14,6 @@
     }
 
     .leftSideBar {
-        flex: 15%;
     }
 }
 
@@ -32,7 +31,6 @@
     }
 
     .leftSideBar {
-        flex: 15%;
     }
 }
 
@@ -57,7 +55,7 @@
 
 
 .middleContent {
-    flex: 75%;
+    flex: 100%;
 }
 
 

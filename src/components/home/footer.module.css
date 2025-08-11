@@ -1,0 +1,35 @@
+.footerDivLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.footerLeftText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDivRight {
+    display: flex;
+    gap: 10px;
+}
+
+/* large */
+@media (min-width: 1400px) {
+
+}
+
+/* big */
+@media (min-width: 900px) and (max-width: 1400px) {
+
+}
+
+/* middle */
+@media (min-width: 768px) and (max-width: 900px) {
+
+}
+
+/* small */
+@media (max-width: 768px) {
+
+}
