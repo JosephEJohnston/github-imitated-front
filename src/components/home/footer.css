@@ -1,12 +1,29 @@
 
 #content-footer {
-    font-size: 0.75rem;
-    padding: 3rem 2rem;
+    font-size: 0.7rem;
+    padding: 3rem 0;
     align-items: center;
     color: grey;
     display: flex;
     justify-content: center;
     gap: 10px;
+
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 1400px) {
+    #content-footer {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    #content-footer {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+    }
 }
 
 .bottom-github {

@@ -1,6 +1,11 @@
-.footerDivLeft {
+.footerDivLeft, .footerDivRight {
     display: flex;
     gap: 10px;
+    white-space: nowrap;
+}
+
+.footerDivLeft {
+
 }
 
 .footerLeftText {
@@ -10,8 +15,8 @@
 }
 
 .footerDivRight {
-    display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* large */
