@@ -90,3 +90,10 @@
     font-size: 0.75rem;
     color: darkgray;
 }
+
+@media (max-width: 768px) {
+    #left-sidebar {
+        display: none;
+    }
+}
+
