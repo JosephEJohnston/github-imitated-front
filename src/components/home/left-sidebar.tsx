@@ -16,11 +16,6 @@ export default function LeftSidebar() {
                         </button>
                     </div>
                 </div>
-                <div>
-                    <label>
-                        <input className="find-rep-input" type="text" value="Find a repository..."/>
-                    </label>
-                </div>
                 <UserRepository />
             </div>
         </>

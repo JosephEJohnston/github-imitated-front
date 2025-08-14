@@ -4,6 +4,7 @@ import ContentFeed from "@/components/home/content/content-feed";
 import Footer from "@/components/home/footer";
 import RightSidebar from "@/components/home/right-sidebar";
 import MediaControlPage from "@/components/home/media-control-page";
+import ContentUserRepository from "@/components/home/content/content-user-repository";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
                   <div id="content">
                       <main>
                           <ContentHome />
+                          <ContentUserRepository />
                           <ContentFeed />
                       </main>
                       <Footer />

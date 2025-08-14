@@ -3,6 +3,11 @@ import React from 'react';
 const UserRepository = () => {
     return (
         <>
+            <div>
+                <label>
+                    <input className="find-rep-input" type="text" value="Find a repository..."/>
+                </label>
+            </div>
             <ul className="left-sidebar-ul">
                 <li className="left-sidebar-li">
                     <div className="left-li-btn-div">
