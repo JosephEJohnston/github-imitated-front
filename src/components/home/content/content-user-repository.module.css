@@ -3,10 +3,16 @@
     display: none;
 }
 
+.title {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 .repositoryContainer {
     margin-top: 1rem;
     padding: 0.5rem 0.75rem;
-    border: 1px solid black;
+    border: 1px solid darkgray;
     border-radius: 0.5em;
 }
 

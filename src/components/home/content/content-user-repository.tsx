@@ -8,7 +8,7 @@ const ContentUserRepository = () => {
         <>
             <div className={classNames($style.container)}>
                 <div>
-                    <div>Top repositories</div>
+                    <div className={$style.title}>Top repositories</div>
                     <div className={classNames($style.repositoryContainer)}>
                         <UserRepository />
                     </div>
