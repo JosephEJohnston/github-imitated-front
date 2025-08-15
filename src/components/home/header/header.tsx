@@ -60,11 +60,11 @@ export default function Header() {
                                     <i className="bi bi-bezier2 bi-icon-middle"></i>
                                 </button>
                             </div>
-                            <div className="head-nav-common-button-div head-item-border">
-                                <button>
-                                    <i className="bi bi-box-seam bi-icon-middle"></i>
-                                </button>
-                            </div>
+                        </div>
+                        <div className="head-nav-common-button-div head-item-border">
+                            <button>
+                                <i className="bi bi-box-seam bi-icon-middle"></i>
+                            </button>
                         </div>
                         <div className="head-nav-common-button-div head-item-border">
                             <button>

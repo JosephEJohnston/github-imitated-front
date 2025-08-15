@@ -18,9 +18,7 @@ const TypeToSearchBoard = (
 
     return (
         <>
-            <div>
 
-            </div>
         </>
     );
 };
