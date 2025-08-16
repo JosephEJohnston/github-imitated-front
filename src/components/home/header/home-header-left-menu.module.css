@@ -1,6 +1,6 @@
 @value --fill-height: 100vh;
 @value --fill-width: 100vw;
-@value --menu-width: 18vw;
+@value --menu-width: 20rem;
 
 .menuShow {
     opacity: 1;
