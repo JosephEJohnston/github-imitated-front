@@ -1,0 +1,33 @@
+.container {
+    display: none;
+}
+
+.feedRightSidebarButton {
+    height: 1.6rem;
+    width: 3rem;
+    background-color: var(--backgroundColor);
+    border-radius: 0.5rem;
+    border: 1px solid darkgray;
+}
+
+.feedRightSidebarButton:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+    }
+}
+
+.rightSideBarShow {
+    display: block;
+}
+
+.rightSideBarHidden {
+    display: none;
+}

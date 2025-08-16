@@ -23,6 +23,10 @@
     border: 1px solid darkgray;
 }
 
+.feed-filter-span {
+    margin-left: 0.5rem;
+}
+
 #feed-filter-button:hover {
     background-color: darkgray;
     cursor: pointer;

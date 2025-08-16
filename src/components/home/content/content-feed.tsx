@@ -1,5 +1,7 @@
 import React from 'react';
+import RightSidebarShowButton from "@/components/home/content/right-sidebar-show-button";
 import "./content-feed.css"
+import $style from '@/components/home/content/content-feed.module.css'
 
 const ContentFeed = () => {
     return (
@@ -7,11 +9,12 @@ const ContentFeed = () => {
             <div id="feed-section">
                 <div id="feed-section-title">
                     <div id="feed-title">Feed</div>
-                    <div id="feed-section-filter-button-div">
+                    <div className={$style.feedSectionFilterButtonDiv}>
                         <button id="feed-filter-button">
                             <i className="bi bi-filter"></i>
-                            <span>Filter</span>
+                            <span className="feed-filter-span">Filter</span>
                         </button>
+                        <RightSidebarShowButton />
                     </div>
                 </div>
 
