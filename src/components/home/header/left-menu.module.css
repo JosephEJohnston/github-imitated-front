@@ -1,43 +1,4 @@
-@value --fill-height: 100vh;
-@value --fill-width: 100vw;
 @value --menu-width: 20rem;
-
-.menuShow {
-    opacity: 1;
-}
-
-.menuHide {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.fill-height {
-    height: --fill-height;
-}
-
-.menuShowContainer {
-    height: --fill-height;
-    width: --fill-width;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: var(--one-z-index);
-    background-color: rgba(190, 209, 213, 0.5);;
-}
-
-.menuContainer {
-    display: flex;
-}
-
-.menu {
-    height: --fill-height;
-    background-color: white;
-    padding: 0.7rem 1.5rem;
-    box-sizing: border-box;
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
-    transition: width 0.5s ease;
-}
 
 .menuWidthHide {
     width: 0;
@@ -46,6 +7,7 @@
 .menuWidthShow {
     width: --menu-width;
 }
+
 
 .topDiv {
     margin-bottom: 2rem;
@@ -101,11 +63,6 @@
 .repositoriesSearchContainer {
     font-size: 0.75rem;
     margin-bottom: 1rem;
-}
-
-.childrenBackDrop {
-    height: --fill-height;
-    width: calc(--fill-width - --menu-width);
 }
 
 .menuBottomFont {
