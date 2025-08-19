@@ -1,4 +1,15 @@
+@value --fill-height: 100vh;
 @value --menu-width: 20rem;
+
+.menu {
+    height: --fill-height;
+    background-color: white;
+    padding: 0.7rem 1.5rem;
+    box-sizing: border-box;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    transition: width 0.5s ease;
+}
 
 .menuWidthHide {
     width: 0;
