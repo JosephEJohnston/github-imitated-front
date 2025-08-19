@@ -25,14 +25,6 @@
     display: flex;
 }
 
-.menuWidthHide {
-    width: 0;
-}
-
-.menuWidthShow {
-    width: --menu-width;
-}
-
 .childrenBackDrop {
     height: --fill-height;
     width: calc(--fill-width - --menu-width);
