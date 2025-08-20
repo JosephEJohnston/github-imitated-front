@@ -8,8 +8,15 @@ const HomeHeaderLeftMenu = (
 
     return (
         <>
-            <MaskLayer showFlag={showFlag} showControlFunction={showControlFunction} >
-                <LeftMenu showFlag={showFlag} showControlFunction={showControlFunction} />
+            <MaskLayer
+                showFlag={showFlag}
+                showControlFunction={showControlFunction}
+                childrenWidthRem={20}
+            >
+                <LeftMenu
+                    showFlag={showFlag}
+                    showControlFunction={showControlFunction}
+                />
             </MaskLayer>
         </>
     );

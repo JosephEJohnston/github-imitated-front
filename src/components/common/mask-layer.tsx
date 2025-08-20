@@ -4,7 +4,7 @@ import classNames from "classnames";
 import $styles from './mask-layer.module.css';
 import styled from "styled-components";
 
-interface Props {
+interface MaskLayerProps {
     showFlag: number;
     showControlFunction : () => void;
     children: React.ReactNode;
@@ -17,7 +17,7 @@ const MaskLayer = (
         showControlFunction,
         children,
         childrenWidthRem
-    } : Props
+    } : MaskLayerProps
 ) => {
 
     const menuShowClass =
