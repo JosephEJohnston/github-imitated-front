@@ -1,6 +1,5 @@
 @value --fill-height: 100vh;
 @value --fill-width: 100vw;
-@value --menu-width: 20rem;
 
 .childrenShow {
     opacity: 1;
@@ -24,9 +23,3 @@
 .maskLayer {
     display: flex;
 }
-
-.childrenBackDrop {
-    height: --fill-height;
-    width: calc(--fill-width - --menu-width);
-}
-
