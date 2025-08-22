@@ -14,10 +14,13 @@
     height: --fill-height;
     width: --fill-width;
     position: fixed;
-    left: 0;
-    top: 0;
     z-index: var(--one-z-index);
     background-color: rgba(190, 209, 213, 0.5);;
+}
+
+.maskLayerPositionDefault {
+    left: 0;
+    top: 0;
 }
 
 .maskLayer {

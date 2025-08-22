@@ -9,6 +9,7 @@ interface MaskLayerProps {
     showControlFunction : () => void;
     children: React.ReactNode;
     childrenWidthRem?: number;
+    positionClass?: string;
 }
 
 const MaskLayer = (
@@ -16,12 +17,16 @@ const MaskLayer = (
         showFlag,
         showControlFunction,
         children,
-        childrenWidthRem
+        childrenWidthRem,
+        positionClass,
     } : MaskLayerProps
 ) => {
 
     const menuShowClass =
         showFlag === -1 ? $styles.childrenHide : $styles.childrenShow;
+
+    const layerPosition = positionClass ?
+        positionClass : $styles.maskLayerPositionDefault;
 
     const ChildrenBackDrop = styled.div`
         height: 100vh;
@@ -30,7 +35,11 @@ const MaskLayer = (
 
     return (
         <>
-            <div className={classNames($styles.maskLayerContainer, menuShowClass)}>
+            <div className={classNames(
+                $styles.maskLayerContainer,
+                menuShowClass,
+                layerPosition)}
+            >
                 <div className={$styles.maskLayer}>
                     { children }
                     <ChildrenBackDrop onClick={showControlFunction}></ChildrenBackDrop>
