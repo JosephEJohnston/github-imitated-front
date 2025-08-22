@@ -2,27 +2,30 @@
 import React, {useState} from 'react';
 import $style from './right-sidebar-show-button.module.css'
 import RightSidebar from "@/components/home/right-sidebar";
+import MaskLayer from "@/components/common/mask-layer";
 
 const RightSidebarShowButton = () => {
 
-    const [showSideBar, setShowSideBar] = useState(false)
-
-    const showSideBarControl = showSideBar ? $style.rightSideBarShow :
-        $style.rightSideBarHidden;
+    const [showSideBar, setShowSideBar] = useState(-1);
+    const updateFlag = () => setShowSideBar(-showSideBar);
 
     return (
         <>
             <div className={$style.container}>
                 <button
                     className={$style.feedRightSidebarButton}
-                    onClick={() => setShowSideBar(true)}
+                    onClick={() => setShowSideBar(-showSideBar)}
                 >
                     <i className="bi bi-layout-text-sidebar"></i>
                 </button>
             </div>
-            <div className={showSideBarControl}>
+            <MaskLayer
+                showFlag={showSideBar}
+                showControlFunction={updateFlag}
+                childrenPositionClass={$style.rightSideBarPosition}
+            >
                 <RightSidebar />
-            </div>
+            </MaskLayer>
         </>
     );
 };
