@@ -24,7 +24,13 @@ const RightSidebarShowButton = () => {
                 showControlFunction={updateFlag}
                 childrenPositionClass={$style.rightSideBarPosition}
             >
-                <RightSidebar />
+                <div className={$style.rightSideBarContainer}>
+                    <div className={$style.titleContainer}>
+                        <div className={$style.exploreTitle}>Explore</div>
+                        <button></button>
+                    </div>
+                    <RightSidebar />
+                </div>
             </MaskLayer>
         </>
     );
