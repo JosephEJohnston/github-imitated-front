@@ -23,11 +23,14 @@ const RightSidebarShowButton = () => {
                 showFlag={showSideBar}
                 showControlFunction={updateFlag}
                 childrenPositionClass={$style.rightSideBarPosition}
+                childrenWidthRem={20}
             >
                 <div className={$style.rightSideBarContainer}>
                     <div className={$style.titleContainer}>
                         <div className={$style.exploreTitle}>Explore</div>
-                        <button></button>
+                        <div onClick={() => updateFlag()} className={$style.closeButton}>
+                            <i className="bi bi-x"></i>
+                        </div>
                     </div>
                     <RightSidebar />
                 </div>

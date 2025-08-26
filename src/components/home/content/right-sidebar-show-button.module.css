@@ -61,3 +61,20 @@
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+.closeButton {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+.closeButton:hover {
+    background-color: var(--borderColor-hover);
+}
