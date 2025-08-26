@@ -23,7 +23,6 @@ const RightSidebarShowButton = () => {
                 showFlag={showSideBar}
                 showControlFunction={updateFlag}
                 childrenPositionClass={$style.rightSideBarPosition}
-                childrenWidthRem={20}
             >
                 <div className={$style.rightSideBarContainer}>
                     <div className={$style.titleContainer}>
