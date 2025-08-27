@@ -1,7 +1,40 @@
+@value --fill-height: 100vh;
+@value --fill-width: 100vw;
+
 .showBoard {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .hideBoard {
     display: none;
+}
+
+.maskLayerContainer {
+    height: --fill-height;
+    width: --fill-width;
+    position: fixed;
+    z-index: var(--one-z-index);
+    top: 0;
+    left: 0;
+    background-color: rgba(146, 152, 154, 0.5);;
+}
+
+.searchBoardContainer {
+    width: 80vw;
+    height: 65vh;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    z-index: calc(var(--one-z-index) + 2);
+}
+
+.backDrop {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: calc(var(--one-z-index) + 1);
+    top: 0;
+    left: 0;
+    background-color: transparent;
 }
