@@ -21,10 +21,12 @@
 }
 
 .searchBoardContainer {
-    width: 80vw;
+    margin-left: -13vw;
+    margin-top: 5px;
+    width: 73vw;
     height: 65vh;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     padding: 0.5rem 1rem;
     z-index: calc(var(--one-z-index) + 2);
 }
