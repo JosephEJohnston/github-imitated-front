@@ -19,16 +19,103 @@ const TypeToSearchBoard = (
 
     return (
         <>
-            <div className={classNames($style.maskLayerContainer, showControl)}
-                 //
-            >
+            <div className={classNames($style.maskLayerContainer, showControl)}>
                 <div className={$style.searchBoardContainer}>
-                    hello world
+                    <div>
+                        <span><i className="bi bi-search"></i></span>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <div>Owners</div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div>Repositories</div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div>Copilot</div>
+                        <div className={$style.elementRow}>
+                            <div>
+                                <span><i className="bi bi-journal-code"></i></span>
+                                <span>JosephEJohnston</span>
+                            </div>
+                            <div>Jump to</div>
+                        </div>
+                    </div>
                 </div>
                 <div className={$style.backDrop}
-                     onClick={() => setShowBoard(!showBoard)}
-                >
-
+                     onClick={() => setShowBoard(!showBoard)}>
                 </div>
             </div>
         </>
