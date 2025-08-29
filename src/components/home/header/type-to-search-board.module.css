@@ -29,6 +29,7 @@
     border-radius: 0.75rem;
     padding: 0.5rem 1rem;
     z-index: calc(var(--one-z-index) + 2);
+    position: relative;
 }
 
 .backDrop {
@@ -44,4 +45,12 @@
 .elementRow {
     display: flex;
     justify-content: space-between;
+}
+
+.boardBottomRow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 2rem);
 }
