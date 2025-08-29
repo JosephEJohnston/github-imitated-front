@@ -27,19 +27,20 @@
     height: 65vh;
     background-color: white;
     border-radius: 0.75rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     z-index: calc(var(--one-z-index) + 2);
-    position: relative;
+    /*position: relative;*/
 }
 
-.backDrop {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: calc(var(--one-z-index) + 1);
-    top: 0;
-    left: 0;
-    background-color: transparent;
+.topSearchDiv {
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+.repositoryContainer {
+    overflow-y: scroll;
+    height: calc(100% - 4rem);
+    padding: 0 1rem;
 }
 
 .elementRow {
@@ -50,7 +51,18 @@
 .boardBottomRow {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 2rem);
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+.backDrop {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: calc(var(--one-z-index) + 1);
+    top: 0;
+    left: 0;
+    background-color: transparent;
 }

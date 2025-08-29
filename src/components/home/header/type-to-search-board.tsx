@@ -21,11 +21,11 @@ const TypeToSearchBoard = (
         <>
             <div className={classNames($style.maskLayerContainer, showControl)}>
                 <div className={$style.searchBoardContainer}>
-                    <div>
+                    <div className={$style.topSearchDiv}>
                         <span><i className="bi bi-search"></i></span>
                         <input type="text"/>
                     </div>
-                    <div>
+                    <div className={$style.repositoryContainer}>
                         <div>
                             <div>Owners</div>
                             <div className={$style.elementRow}>
