@@ -29,7 +29,6 @@
     border-radius: 0.75rem;
     padding: 0.5rem 0;
     z-index: calc(var(--one-z-index) + 2);
-    /*position: relative;*/
 }
 
 .topSearchDiv {
@@ -43,9 +42,34 @@
     padding: 0 1rem;
 }
 
+.line {
+    margin-left: -0.85rem;
+    margin-right: -0.85rem;
+}
+
+.section {
+    margin-top: 0.75rem;
+}
+
+.sectionTitle {
+    color: dimgrey;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
 .elementRow {
+    margin: 0.75rem 0;
     display: flex;
     justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.elementRowTextLeft {
+    margin-left: 0.5rem;
+}
+
+.elementRowTextRight {
+    color: dimgrey;
 }
 
 .boardBottomRow {

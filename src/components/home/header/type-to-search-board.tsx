@@ -26,92 +26,92 @@ const TypeToSearchBoard = (
                         <input type="text"/>
                     </div>
                     <div className={$style.repositoryContainer}>
-                        <div>
-                            <div>Owners</div>
+                        <div className={$style.section}>
+                            <div className={$style.sectionTitle}>Owners</div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-journal-code"></i></span>
-                                    <span>JosephEJohnston</span>
+                                    <span className={$style.elementRowTextLeft}>JosephEJohnston</span>
                                 </div>
-                                <div>Jump to</div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
                             </div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-journal-code"></i></span>
-                                    <span>vercel</span>
+                                    <span className={$style.elementRowTextLeft}>vercel</span>
                                 </div>
-                                <div>Jump to</div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
                             </div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-journal-code"></i></span>
-                                    <span>Kiranism</span>
+                                    <span className={$style.elementRowTextLeft}>Kiranism</span>
                                 </div>
-                                <div>Jump to</div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
                             </div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-journal-code"></i></span>
-                                    <span>webpack</span>
+                                    <span className={$style.elementRowTextLeft}>webpack</span>
                                 </div>
-                                <div>Jump to</div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
                             </div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-journal-code"></i></span>
-                                    <span>ruanyf</span>
+                                    <span className={$style.elementRowTextLeft}>ruanyf</span>
                                 </div>
-                                <div>Jump to</div>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div>
-                            <div>Repositories</div>
-                            <div className={$style.elementRow}>
-                                <div>
-                                    <span><i className="bi bi-journal-code"></i></span>
-                                    <span>JosephEJohnston/github-imitated-front</span>
-                                </div>
-                                <div>Jump to</div>
-                            </div>
-                            <div className={$style.elementRow}>
-                                <div>
-                                    <span><i className="bi bi-journal-code"></i></span>
-                                    <span>vercel/next.js</span>
-                                </div>
-                                <div>Jump to</div>
-                            </div>
-                            <div className={$style.elementRow}>
-                                <div>
-                                    <span><i className="bi bi-journal-code"></i></span>
-                                    <span>Kiranism/next-shadcn-dashboard-starter</span>
-                                </div>
-                                <div>Jump to</div>
-                            </div>
-                            <div className={$style.elementRow}>
-                                <div>
-                                    <span><i className="bi bi-journal-code"></i></span>
-                                    <span>JosephEJohnston/nextjs-learn</span>
-                                </div>
-                                <div>Jump to</div>
-                            </div>
-                            <div className={$style.elementRow}>
-                                <div>
-                                    <span><i className="bi bi-journal-code"></i></span>
-                                    <span>webpack/webpack</span>
-                                </div>
-                                <div>Jump to</div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
                             </div>
                         </div>
-                        <hr/>
-                        <div>
-                            <div>Copilot</div>
+                        <hr className={$style.line}/>
+                        <div className={$style.section}>
+                            <div className={$style.sectionTitle}>Repositories</div>
+                            <div className={$style.elementRow}>
+                                <div>
+                                    <span><i className="bi bi-journal-code"></i></span>
+                                    <span className={$style.elementRowTextLeft}>JosephEJohnston/github-imitated-front</span>
+                                </div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
+                            </div>
+                            <div className={$style.elementRow}>
+                                <div>
+                                    <span><i className="bi bi-journal-code"></i></span>
+                                    <span className={$style.elementRowTextLeft}>vercel/next.js</span>
+                                </div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
+                            </div>
+                            <div className={$style.elementRow}>
+                                <div>
+                                    <span><i className="bi bi-journal-code"></i></span>
+                                    <span className={$style.elementRowTextLeft}>Kiranism/next-shadcn-dashboard-starter</span>
+                                </div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
+                            </div>
+                            <div className={$style.elementRow}>
+                                <div>
+                                    <span><i className="bi bi-journal-code"></i></span>
+                                    <span className={$style.elementRowTextLeft}>JosephEJohnston/nextjs-learn</span>
+                                </div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
+                            </div>
+                            <div className={$style.elementRow}>
+                                <div>
+                                    <span><i className="bi bi-journal-code"></i></span>
+                                    <span className={$style.elementRowTextLeft}>webpack/webpack</span>
+                                </div>
+                                <div className={$style.elementRowTextRight}>Jump to</div>
+                            </div>
+                        </div>
+                        <hr className={$style.line}/>
+                        <div className={$style.section}>
+                            <div className={$style.sectionTitle}>Copilot</div>
                             <div className={$style.elementRow}>
                                 <div>
                                     <span><i className="bi bi-robot"></i></span>
-                                    <span>Chat with Copilot</span>
+                                    <span className={$style.elementRowTextLeft}>Chat with Copilot</span>
                                 </div>
-                                <div>Start a new Copilot thread</div>
+                                <div className={$style.elementRowTextRight}>Start a new Copilot thread</div>
                             </div>
                         </div>
                     </div>
