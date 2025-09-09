@@ -22,7 +22,6 @@
 }
 
 .searchBoardContainer {
-    margin-left: -13vw;
     margin-top: 5px;
     width: 73vw;
     height: calc(60vh);
@@ -30,6 +29,19 @@
     border-radius: 0.75rem;
     padding-top: 0.5rem;
     z-index: calc(var(--one-z-index) + 2);
+}
+
+@media (min-width: 900px) {
+    .searchBoardContainerWidth {
+        margin-left: -13vw;
+        width: 73vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .searchBoardContainerWidth {
+        width: 100%;
+    }
 }
 
 .topSearchDiv {
@@ -67,16 +79,23 @@
 }
 
 .sectionTitle {
+    margin: 0.25rem 0.35rem;
     color: dimgrey;
     font-size: 0.7rem;
     font-weight: bold;
 }
 
 .elementRow {
-    margin: 0.75rem 0;
+    border-radius: 0.35rem;
+    padding: 0.35rem 0.35rem;
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
+}
+
+.elementRow:hover {
+    background-color: gainsboro;
+    cursor: pointer;
 }
 
 .elementRowTextLeft {
@@ -88,9 +107,6 @@
 }
 
 .boardBottomRow {
-
-    /*position: absolute;*/
-    /*bottom: 0;*/
     height: --boardBottomRowHeight;
     padding: 0 1.5rem;
     display: flex;
@@ -100,6 +116,15 @@
 
     color: royalblue;
     font-size: 0.75rem;
+}
+
+.boardBottomRowText {
+
+}
+
+.boardBottomRowText:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .backDrop {

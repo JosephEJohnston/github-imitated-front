@@ -20,7 +20,7 @@ const TypeToSearchBoard = (
     return (
         <>
             <div className={classNames($style.maskLayerContainer, showControl)}>
-                <div className={$style.searchBoardContainer}>
+                <div className={classNames($style.searchBoardContainer, $style.searchBoardContainerWidth)}>
                     <div className={$style.topSearchDiv}>
                         <span className={$style.topSearchIcon}><i className="bi bi-search"></i></span>
                         <input className={$style.topSearchInput} type="text"/>
@@ -116,8 +116,12 @@ const TypeToSearchBoard = (
                         </div>
                     </div>
                     <div className={$style.boardBottomRow}>
-                        <div>Search syntax tips</div>
-                        <div>Give feedback</div>
+                        <div className={$style.boardBottomRowText}>
+                            Search syntax tips
+                        </div>
+                        <div className={$style.boardBottomRowText}>
+                            Give feedback
+                        </div>
                     </div>
                 </div>
                 <div className={$style.backDrop}
