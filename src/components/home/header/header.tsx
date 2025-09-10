@@ -30,7 +30,10 @@ export default function Header() {
                         <TypeToSearch />
                         <div className={classNames($style.headerMiddleButtonList, 'block-more-than-small')}>
                             <div id="combine-button" className="head-nav-common-button-div head-item-border">
-                                <button id="combine-button-left">
+                                <button id="combine-button-left"
+                                        className={$style.combineButtonLeft}
+                                        data-tooltip={"Chat with Copilot"}
+                                >
                                     <i className="bi bi-robot"></i>
                                 </button>
                                 <button id="combine-button-right">
