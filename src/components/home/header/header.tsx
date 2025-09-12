@@ -31,26 +31,37 @@ export default function Header() {
                         <div className={classNames($style.headerMiddleButtonList, 'block-more-than-small')}>
                             <div id="combine-button" className="head-nav-common-button-div head-item-border">
                                 <button id="combine-button-left"
-                                        className={$style.combineButtonLeft}
+                                        className={classNames($style.withHoverText)}
                                         data-tooltip={"Chat with Copilot"}
                                 >
                                     <i className="bi bi-robot"></i>
                                 </button>
-                                <button id="combine-button-right">
+                                <button id="combine-button-right"
+                                        className={classNames($style.withHoverText)}
+                                        data-tooltip={"Open Copilot..."}
+                                >
                                     <i className="bi bi-chevron-down bi-icon-small"></i>
                                 </button>
                             </div>
                             <div className="head-nav-split">
                                 <div>|</div>
                             </div>
-                            <div id="two-inner-button-div" className="head-nav-common-button-div head-item-border">
+                            <div id="two-inner-button-div"
+                                 className={classNames(
+                                     $style.withHoverText,
+                                     $style.twoInnerButtonDiv,
+                                     'head-nav-common-button-div',
+                                     'head-item-border'
+                                 )}
+                                 data-tooltip={"Create new..."}
+                            >
                                 <button id="two-inner-button">
-                            <span className="button-inner-span">
-                                <i className="bi bi-plus bi-icon-middle"></i>
-                            </span>
-                                    <span className="button-inner-span">
-                                <i className="bi bi-chevron-down bi-icon-small"></i>
-                            </span>
+                                <span className="button-inner-span">
+                                    <i className="bi bi-plus bi-icon-middle"></i>
+                                </span>
+                                <span className="button-inner-span">
+                                    <i className="bi bi-chevron-down bi-icon-small"></i>
+                                </span>
                                 </button>
                             </div>
                             <div className="head-nav-common-button-div head-item-border">
