@@ -65,18 +65,32 @@ export default function Header() {
                                 </button>
                             </div>
                             <div className="head-nav-common-button-div head-item-border">
-                                <button>
+                                <button className={classNames(
+                                    $style.withHoverText,
+                                    $style.issueButton
+                                    )}
+                                    data-tooltip={"You issues"}
+                                >
                                     <i className="bi bi-record-circle bi-icon-middle"></i>
                                 </button>
                             </div>
                             <div className="head-nav-common-button-div head-item-border">
-                                <button>
+                                <button className={classNames(
+                                    $style.withHoverText,
+                                    )}
+                                    data-tooltip={"Your pull requests"}
+                                >
                                     <i className="bi bi-bezier2 bi-icon-middle"></i>
                                 </button>
                             </div>
                         </div>
                         <div className="head-nav-common-button-div head-item-border">
-                            <button>
+                            <button className={classNames(
+                                $style.withHoverText,
+                                $style.notificationButton
+                                )}
+                                data-tooltip={"You have no unread notifications"}
+                            >
                                 <i className="bi bi-box-seam bi-icon-middle"></i>
                             </button>
                         </div>
