@@ -4,6 +4,7 @@ import $style from './header.module.css'
 import HomeHeaderLeftMenuButton from "@/components/home/header/home-header-left-menu-button";
 import TypeToSearch from "@/components/home/header/type-to-search";
 import classNames from "classnames";
+import CopilotButton from "@/components/home/header/copilot-button";
 
 export default function Header() {
     return (
@@ -29,20 +30,7 @@ export default function Header() {
                     <div id="header-nav-right">
                         <TypeToSearch />
                         <div className={classNames($style.headerMiddleButtonList, 'block-more-than-small')}>
-                            <div id="combine-button" className="head-nav-common-button-div head-item-border">
-                                <button id="combine-button-left"
-                                        className={classNames($style.withHoverText)}
-                                        data-tooltip={"Chat with Copilot"}
-                                >
-                                    <i className="bi bi-robot"></i>
-                                </button>
-                                <button id="combine-button-right"
-                                        className={classNames($style.withHoverText)}
-                                        data-tooltip={"Open Copilot..."}
-                                >
-                                    <i className="bi bi-chevron-down bi-icon-small"></i>
-                                </button>
-                            </div>
+                            <CopilotButton />
                             <div className="head-nav-split">
                                 <div>|</div>
                             </div>
