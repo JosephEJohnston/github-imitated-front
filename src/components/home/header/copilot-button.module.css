@@ -1,0 +1,39 @@
+
+.combineButton {
+    --combine-button-width: 3rem;
+    width: var(--combine-button-width);
+    display: flex;
+    position: relative;
+}
+
+.combineButton > button {
+
+}
+
+.combineButtonLeft {
+    --combine-button-left-width: 1.75rem;
+    width: var(--combine-button-left-width);
+    border-right: 1px solid var(--borderColor-default);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.combineButtonRight {
+    width: calc(var(--combine-button-width) -
+    var(--combine-button-left-width));
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.copilotMenu {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 2.2rem;
+    left: -12rem;
+
+    height: 12.5rem;
+    width: 15rem;
+}
+
+
