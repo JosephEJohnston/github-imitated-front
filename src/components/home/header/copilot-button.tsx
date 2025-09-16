@@ -36,7 +36,36 @@ const CopilotButton = () => {
                 </button>
                 {showMenu && (
                     <div className={$style.copilotMenu}>
-                        hello world
+                        <div>
+                            New conversation in
+                        </div>
+                        <div className={$style.copilotMenuUpperRow}>
+                            <span><i className="bi bi-chat-left"></i></span>
+                            <span>Assistive</span>
+                        </div>
+                        <div className={$style.copilotMenuUpperRow}>
+                            <span><i className="bi bi-folder-plus"></i></span>
+                            <span>Spaces</span>
+                        </div>
+                        <hr/>
+                        <div className={$style.copilotMenuBelowRow}>
+                            <div>
+                                <span>icon</span>
+                                <span>Download for</span>
+                            </div>
+                            <div>
+                                <span>icon</span>
+                            </div>
+                        </div>
+                        <div className={$style.copilotMenuBelowRow}>
+                            <div>
+                                <span><i className="bi bi-robot"></i></span>
+                                <span>Your Copilot</span>
+                            </div>
+                            <div>
+                                <span>free</span>
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>
