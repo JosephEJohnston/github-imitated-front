@@ -36,34 +36,34 @@ const CopilotButton = () => {
                 </button>
                 {showMenu && (
                     <div className={$style.copilotMenu}>
-                        <div>
+                        <div className={$style.copilotMenuTitle}>
                             New conversation in
                         </div>
                         <div className={$style.copilotMenuUpperRow}>
-                            <span><i className="bi bi-chat-left"></i></span>
-                            <span>Assistive</span>
+                            <span className={$style.copilotMenuRowSpan}><i className="bi bi-chat-left"></i></span>
+                            <span className={$style.copilotMenuRowSpan}>Assistive</span>
                         </div>
                         <div className={$style.copilotMenuUpperRow}>
-                            <span><i className="bi bi-folder-plus"></i></span>
-                            <span>Spaces</span>
+                            <span className={$style.copilotMenuRowSpan}><i className="bi bi-folder-plus"></i></span>
+                            <span className={$style.copilotMenuRowSpan}>Spaces</span>
                         </div>
                         <hr/>
                         <div className={$style.copilotMenuBelowRow}>
-                            <div>
-                                <span>icon</span>
-                                <span>Download for</span>
+                            <div className={$style.copilotMenuBelowRowDiv}>
+                                <span className={$style.copilotMenuRowSpan}><i className="bi bi-download"></i></span>
+                                <span className={$style.copilotMenuRowSpan}>Download for</span>
                             </div>
-                            <div>
-                                <span>icon</span>
+                            <div className={$style.copilotMenuBelowRowDiv}>
+                                <span className={$style.copilotMenuRowSpan}><i className="bi bi-chevron-right"></i></span>
                             </div>
                         </div>
                         <div className={$style.copilotMenuBelowRow}>
-                            <div>
-                                <span><i className="bi bi-robot"></i></span>
-                                <span>Your Copilot</span>
+                            <div className={$style.copilotMenuBelowRowDiv}>
+                                <span className={$style.copilotMenuRowSpan}><i className="bi bi-robot"></i></span>
+                                <span className={$style.copilotMenuRowSpan}>Your Copilot</span>
                             </div>
-                            <div>
-                                <span>free</span>
+                            <div className={$style.copilotMenuBelowRowDiv}>
+                                <span className={$style.copilotMenuRowSpan}>free</span>
                             </div>
                         </div>
                     </div>
