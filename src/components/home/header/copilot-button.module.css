@@ -82,3 +82,12 @@
 .menuIcon {
 
 }
+
+.spanFree {
+    height: 0.75rem;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: #8f8f8f solid 1px;
+    border-radius: 0.75rem;
+}

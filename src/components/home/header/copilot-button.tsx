@@ -55,25 +55,25 @@ const CopilotButton = () => {
                         <div className={$style.copilotMenuBelowRow}>
                             <div className={$style.copilotMenuBelowRowDiv}>
                                 <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
-                                    <i className="bi bi-download"></i>
+                                    <i className={classNames($style.menuIcon, 'bi', 'bi-download')}></i>
                                 </span>
                                 <span className={$style.copilotMenuRowSpan}>Download for</span>
                             </div>
                             <div className={$style.copilotMenuBelowRowDiv}>
                                 <span className={classNames($style.copilotMenuRowSpan)}>
-                                    <i className="bi bi-chevron-right"></i>
+                                    <i className={classNames($style.menuIcon, 'bi', 'bi-chevron-right')}></i>
                                 </span>
                             </div>
                         </div>
                         <div className={$style.copilotMenuBelowRow}>
                             <div className={$style.copilotMenuBelowRowDiv}>
                                 <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
-                                    <i className="bi bi-robot"></i>
+                                    <i className={classNames($style.menuIcon, 'bi', 'bi-robot')}></i>
                                 </span>
                                 <span className={$style.copilotMenuRowSpan}>Your Copilot</span>
                             </div>
                             <div className={$style.copilotMenuBelowRowDiv}>
-                                <span className={$style.copilotMenuRowSpan}>free</span>
+                                <span className={classNames($style.copilotMenuRowSpan, $style.spanFree)}>free</span>
                             </div>
                         </div>
                     </div>
