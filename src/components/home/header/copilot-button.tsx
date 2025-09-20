@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react';
+import React, {RefObject, useEffect, useRef, useState} from 'react';
 import "./header.css"
 import classNames from "classnames";
 import $headerStyle from "@/components/home/header/header.module.css";
@@ -8,6 +8,21 @@ import $style from "@/components/home/header/copilot-button.module.css";
 const CopilotButton = () => {
 
     const [showMenu, setShowMenu] = useState(false);
+
+    const menuRef: RefObject<HTMLDivElement | null> = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains((event.target as Element))) {
+                setShowMenu(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuRef]);
 
     return (
         <>
@@ -35,7 +50,7 @@ const CopilotButton = () => {
                     <i className="bi bi-chevron-down bi-icon-small"></i>
                 </button>
                 {showMenu && (
-                    <div className={$style.copilotMenu}>
+                    <div className={$style.copilotMenu} ref={menuRef}>
                         <div className={$style.copilotMenuTitle}>
                             New conversation in
                         </div>
