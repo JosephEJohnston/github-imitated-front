@@ -31,9 +31,9 @@
     border-radius: 0.5rem;
     position: absolute;
     top: 2.2rem;
-    left: -12rem;
+    left: -11rem;
 
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.5rem;
     height: 10.5rem;
     width: 13rem;
 
@@ -51,6 +51,7 @@
     margin-bottom: 0.25rem;
     font-size: 0.75rem;
     font-weight: bold;
+    padding: 0 0.5rem;
 }
 
 .copilotMenuRowSpan {
@@ -67,12 +68,16 @@
 .copilotMenuUpperRow {
     display: flex;
     align-items: center;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .copilotMenuBelowRow {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .copilotMenuBelowRowDiv {
@@ -91,3 +96,10 @@
     border: #8f8f8f solid 1px;
     border-radius: 0.75rem;
 }
+
+.copilotMenuUpperRow:hover,
+.copilotMenuBelowRow:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
