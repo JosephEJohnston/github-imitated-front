@@ -56,6 +56,16 @@ const CopilotButtonMenu = (
     props: CopilotButtonMenuProps
 ) => {
 
+    const [showMenu, setShowMenu] = useState(false);
+
+    const innerMenuRef: RefObject<HTMLDivElement | null> = useRef(null);
+
+    useHideClickOutside(
+        innerMenuRef,
+        () => setShowMenu(false),
+        props.ref,
+    );
+
     return (
         <div className={$style.copilotMenu} ref={props.ref}>
             <div className={$style.copilotMenuTitle}>
@@ -74,7 +84,7 @@ const CopilotButtonMenu = (
                 <span className={$style.copilotMenuRowSpan}>Spaces</span>
             </div>
             <hr className={$style.menuHr}/>
-            <div className={$style.copilotMenuBelowRow}>
+            <div className={$style.copilotMenuBelowRow} onClick={() => setShowMenu(!showMenu)}>
                 <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                         <i className={classNames($style.menuIcon, 'bi', 'bi-download')}></i>
@@ -86,6 +96,7 @@ const CopilotButtonMenu = (
                         <i className={classNames($style.menuIcon, 'bi', 'bi-chevron-right')}></i>
                     </span>
                 </div>
+                { showMenu && <DownloadForMenu parentRef={props.ref} ref={innerMenuRef}/> }
             </div>
             <div className={$style.copilotMenuBelowRow}>
                 <div className={$style.copilotMenuBelowRowDiv}>
@@ -102,10 +113,22 @@ const CopilotButtonMenu = (
     )
 }
 
-const DownloadForMenu = () => {
+interface DownloadForMenuProps {
+    parentRef: RefObject<HTMLDivElement | null>;
+    ref: RefObject<HTMLDivElement | null>;
+}
+
+const DownloadForMenu = (
+    props: DownloadForMenuProps
+) => {
+
+
 
     return (
         <>
+            <div className={$style.downloadForMenu} ref={props.ref}>
+
+            </div>
         </>
     );
 }
