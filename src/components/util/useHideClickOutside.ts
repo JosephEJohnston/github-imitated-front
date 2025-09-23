@@ -1,9 +1,11 @@
 import {RefObject, useEffect} from "react";
 
-const useHideClickOutside = <T extends HTMLElement>(
+const useHideClickOutside =
+    <T extends HTMLElement, R extends HTMLElement>
+    (
     elementRef: RefObject<T | null>,
     hideControl: () => void,
-    exceptRef?: RefObject<T | null>,
+    exceptRef?: RefObject<R | null>,
 ) => {
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {

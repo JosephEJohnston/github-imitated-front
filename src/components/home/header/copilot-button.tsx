@@ -11,10 +11,12 @@ const CopilotButton = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const menuRef: RefObject<HTMLDivElement | null> = useRef(null);
+    const buttonRef: RefObject<HTMLButtonElement | null> = useRef(null);
 
     useHideClickOutside(
         menuRef,
-        () => setShowMenu(false)
+        () => setShowMenu(false),
+        buttonRef,
     );
 
     return (
@@ -39,6 +41,7 @@ const CopilotButton = () => {
                         )}
                         data-tooltip={"Open Copilot..."}
                         onClick={() => setShowMenu(!showMenu)}
+                        ref={buttonRef}
                 >
                     <i className="bi bi-chevron-down bi-icon-small"></i>
                 </button>
@@ -122,12 +125,34 @@ const DownloadForMenu = (
     props: DownloadForMenuProps
 ) => {
 
-
-
     return (
         <>
             <div className={$style.downloadForMenu} ref={props.ref}>
-
+                <div>
+                    <div>
+                        <span><i className="bi bi-fork-knife"></i></span>
+                        <span>Visual Studio Code</span>
+                    </div>
+                    <div>
+                        <span><i className="bi bi-fork-knife"></i></span>
+                        <span>Visual Studio</span>
+                    </div>
+                    <div>
+                        <span><i className="bi bi-fork-knife"></i></span>
+                        <span>Xcode</span>
+                    </div>
+                    <div>
+                        <span><i className="bi bi-fork-knife"></i></span>
+                        <span>JetBrains</span>
+                    </div>
+                    <div>
+                        <span><i className="bi bi-fork-knife"></i></span>
+                        <span>Neovim</span>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
             </div>
         </>
     );
