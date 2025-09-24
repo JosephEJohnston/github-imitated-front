@@ -106,12 +106,13 @@
 .downloadForMenu {
     box-shadow: 0 0 5px 1px #d3d3d3;
     border-radius: 0.5rem;
+    padding: 0.75rem 0.5rem;
 
     position: absolute;
     top: 7rem;
     left: 13.5rem;
 
-    height: 12.5rem;
+    height: 13rem;
     width: 11.5rem;
     background-color: white;
 }

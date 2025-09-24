@@ -63,10 +63,12 @@ const CopilotButtonMenu = (
 
     const innerMenuRef: RefObject<HTMLDivElement | null> = useRef(null);
 
+    const downloadDivRef: RefObject<HTMLDivElement | null> = useRef(null);
+
     useHideClickOutside(
         innerMenuRef,
         () => setShowMenu(false),
-        props.ref,
+        downloadDivRef,
     );
 
     return (
@@ -87,7 +89,10 @@ const CopilotButtonMenu = (
                 <span className={$style.copilotMenuRowSpan}>Spaces</span>
             </div>
             <hr className={$style.menuHr}/>
-            <div className={$style.copilotMenuBelowRow} onClick={() => setShowMenu(!showMenu)}>
+            <div className={$style.copilotMenuBelowRow}
+                 onClick={() => setShowMenu(!showMenu)}
+                 ref={downloadDivRef}
+            >
                 <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                         <i className={classNames($style.menuIcon, 'bi', 'bi-download')}></i>
@@ -129,29 +134,45 @@ const DownloadForMenu = (
         <>
             <div className={$style.downloadForMenu} ref={props.ref}>
                 <div>
-                    <div>
-                        <span><i className="bi bi-fork-knife"></i></span>
-                        <span>Visual Studio Code</span>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className={classNames('bi', 'bi-globe2')}></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>Visual Studio Code</span>
                     </div>
-                    <div>
-                        <span><i className="bi bi-fork-knife"></i></span>
-                        <span>Visual Studio</span>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className="bi bi-google"></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>Visual Studio</span>
                     </div>
-                    <div>
-                        <span><i className="bi bi-fork-knife"></i></span>
-                        <span>Xcode</span>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className="bi bi-google-play"></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>Xcode</span>
                     </div>
-                    <div>
-                        <span><i className="bi bi-fork-knife"></i></span>
-                        <span>JetBrains</span>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className="bi bi-hammer"></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>JetBrains</span>
                     </div>
-                    <div>
-                        <span><i className="bi bi-fork-knife"></i></span>
-                        <span>Neovim</span>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className="bi bi-fork-knife"></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>Neovim</span>
                     </div>
                 </div>
+                <hr className={$style.menuHr}/>
                 <div>
-                    <div></div>
+                    <div className={$style.copilotMenuUpperRow}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
+                            <i className="bi bi-terminal"></i>
+                        </span>
+                        <span className={$style.copilotMenuRowSpan}>CLI</span>
+                    </div>
                 </div>
             </div>
         </>
