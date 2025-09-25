@@ -45,7 +45,7 @@ const CopilotButton = () => {
                 >
                     <i className="bi bi-chevron-down bi-icon-small"></i>
                 </button>
-                {showMenu && <CopilotButtonMenu ref={menuRef} />}
+                <CopilotButtonMenu ref={menuRef} showControl={showMenu} />
             </div>
         </>
     );
@@ -53,6 +53,7 @@ const CopilotButton = () => {
 
 interface CopilotButtonMenuProps {
     ref: RefObject<HTMLDivElement | null>;
+    showControl: boolean;
 }
 
 const CopilotButtonMenu = (
@@ -71,68 +72,77 @@ const CopilotButtonMenu = (
         downloadDivRef,
     );
 
+    const showClass = props.showControl ? $style.copilotMenuShow :
+        $style.copilotMenuHide;
+
     return (
-        <div className={$style.copilotMenu} ref={props.ref}>
-            <div className={$style.copilotMenuTitle}>
-                New conversation in
-            </div>
-            <div className={$style.copilotMenuUpperRow}>
+        <>
+            <div className={classNames($style.copilotMenu, showClass)} ref={props.ref}>
+                <div className={$style.copilotMenuTitle}>
+                    New conversation in
+                </div>
+                <div className={$style.copilotMenuUpperRow}>
                 <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                     <i className={classNames($style.menuIcon, 'bi', 'bi-chat-left')}></i>
                 </span>
-                <span className={$style.copilotMenuRowSpan}>Assistive</span>
-            </div>
-            <div className={$style.copilotMenuUpperRow}>
+                    <span className={$style.copilotMenuRowSpan}>Assistive</span>
+                </div>
+                <div className={$style.copilotMenuUpperRow}>
                 <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                     <i className={classNames($style.menuIcon, 'bi', 'bi-folder-plus')}></i>
                 </span>
-                <span className={$style.copilotMenuRowSpan}>Spaces</span>
-            </div>
-            <hr className={$style.menuHr}/>
-            <div className={$style.copilotMenuBelowRow}
-                 onClick={() => setShowMenu(!showMenu)}
-                 ref={downloadDivRef}
-            >
-                <div className={$style.copilotMenuBelowRowDiv}>
+                    <span className={$style.copilotMenuRowSpan}>Spaces</span>
+                </div>
+                <hr className={$style.menuHr}/>
+                <div className={$style.copilotMenuBelowRow}
+                     onClick={() => setShowMenu(!showMenu)}
+                     ref={downloadDivRef}
+                >
+                    <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                         <i className={classNames($style.menuIcon, 'bi', 'bi-download')}></i>
                     </span>
-                    <span className={$style.copilotMenuRowSpan}>Download for</span>
-                </div>
-                <div className={$style.copilotMenuBelowRowDiv}>
+                        <span className={$style.copilotMenuRowSpan}>Download for</span>
+                    </div>
+                    <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan)}>
                         <i className={classNames($style.menuIcon, 'bi', 'bi-chevron-right')}></i>
                     </span>
+                    </div>
                 </div>
-            </div>
-            { showMenu && <DownloadForMenu parentRef={props.ref} ref={downloadMenuRef}/> }
-            <div className={$style.copilotMenuBelowRow}>
-                <div className={$style.copilotMenuBelowRowDiv}>
+                <div className={$style.copilotMenuBelowRow}>
+                    <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
                         <i className={classNames($style.menuIcon, 'bi', 'bi-robot')}></i>
                     </span>
-                    <span className={$style.copilotMenuRowSpan}>Your Copilot</span>
-                </div>
-                <div className={$style.copilotMenuBelowRowDiv}>
-                    <span className={classNames($style.copilotMenuRowSpan, $style.spanFree)}>free</span>
+                        <span className={$style.copilotMenuRowSpan}>Your Copilot</span>
+                    </div>
+                    <div className={$style.copilotMenuBelowRowDiv}>
+                        <span className={classNames($style.copilotMenuRowSpan, $style.spanFree)}>free</span>
+                    </div>
                 </div>
             </div>
-        </div>
+            <DownloadForMenu parentRef={props.ref} ref={downloadMenuRef} showControl={showMenu}/>
+        </>
     )
 }
 
 interface DownloadForMenuProps {
     parentRef: RefObject<HTMLDivElement | null>;
     ref: RefObject<HTMLDivElement | null>;
+    showControl: boolean;
 }
 
 const DownloadForMenu = (
     props: DownloadForMenuProps
 ) => {
 
+    const showClass = props.showControl ? $style.downloadMenuShow :
+        $style.downloadMenuHide;
+
     return (
         <>
-            <div className={$style.downloadForMenu} ref={props.ref}>
+            <div className={classNames($style.downloadForMenu, showClass)} ref={props.ref}>
                 <div>
                     <div className={$style.copilotMenuUpperRow}>
                         <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>

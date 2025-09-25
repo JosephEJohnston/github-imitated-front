@@ -34,11 +34,22 @@
     left: -11rem;
 
     padding: 0.75rem 0.5rem;
-    height: 10.5rem;
     width: 13rem;
 
     z-index: var(--normal-z-index);
     background-color: white;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+.copilotMenuHide {
+    height: 0;
+    opacity: 0;
+}
+
+.copilotMenuShow {
+    height: 10.5rem;
+    opacity: 1;
 }
 
 .menuHr {
@@ -109,15 +120,26 @@
     padding: 0.75rem 0.5rem;
 
     position: absolute;
-    top: 7rem;
-    left: 13.5rem;
+    top: 9.5rem;
+    left: 2.5rem;
 
     height: 13rem;
     width: 11.5rem;
     background-color: white;
     z-index: var(--normal-z-index);
+    transition: height 0.5s ease;
+    overflow: hidden;
 }
 
+.downloadMenuHide {
+    height: 0;
+    opacity: 0;
+}
+
+.downloadMenuShow {
+    height: 13rem;
+    opacity: 1;
+}
 
 
 
