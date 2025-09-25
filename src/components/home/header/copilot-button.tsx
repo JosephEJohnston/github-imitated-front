@@ -61,12 +61,12 @@ const CopilotButtonMenu = (
 
     const [showMenu, setShowMenu] = useState(false);
 
-    const innerMenuRef: RefObject<HTMLDivElement | null> = useRef(null);
+    const downloadMenuRef: RefObject<HTMLDivElement | null> = useRef(null);
 
     const downloadDivRef: RefObject<HTMLDivElement | null> = useRef(null);
 
     useHideClickOutside(
-        innerMenuRef,
+        downloadMenuRef,
         () => setShowMenu(false),
         downloadDivRef,
     );
@@ -104,8 +104,8 @@ const CopilotButtonMenu = (
                         <i className={classNames($style.menuIcon, 'bi', 'bi-chevron-right')}></i>
                     </span>
                 </div>
-                { showMenu && <DownloadForMenu parentRef={props.ref} ref={innerMenuRef}/> }
             </div>
+            { showMenu && <DownloadForMenu parentRef={props.ref} ref={downloadMenuRef}/> }
             <div className={$style.copilotMenuBelowRow}>
                 <div className={$style.copilotMenuBelowRowDiv}>
                     <span className={classNames($style.copilotMenuRowSpan, $style.iconSpan)}>
