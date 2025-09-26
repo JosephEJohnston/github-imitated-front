@@ -5,6 +5,7 @@ import HomeHeaderLeftMenuButton from "@/components/home/header/home-header-left-
 import TypeToSearch from "@/components/home/header/type-to-search";
 import classNames from "classnames";
 import CopilotButton from "@/components/home/header/copilot-button";
+import CreateNewButton from "@/components/home/header/create-new-button";
 
 export default function Header() {
     return (
@@ -34,24 +35,7 @@ export default function Header() {
                             <div className="head-nav-split">
                                 <div>|</div>
                             </div>
-                            <div id="two-inner-button-div"
-                                 className={classNames(
-                                     $style.withHoverText,
-                                     $style.twoInnerButtonDiv,
-                                     'head-nav-common-button-div',
-                                     'head-item-border'
-                                 )}
-                                 data-tooltip={"Create new..."}
-                            >
-                                <button id="two-inner-button">
-                                <span className="button-inner-span">
-                                    <i className="bi bi-plus bi-icon-middle"></i>
-                                </span>
-                                <span className="button-inner-span">
-                                    <i className="bi bi-chevron-down bi-icon-small"></i>
-                                </span>
-                                </button>
-                            </div>
+                            <CreateNewButton />
                             <div className="head-nav-common-button-div head-item-border">
                                 <button className={classNames(
                                     $style.withHoverText,
