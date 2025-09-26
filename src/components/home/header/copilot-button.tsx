@@ -122,7 +122,11 @@ const CopilotButtonMenu = (
                     </div>
                 </div>
             </div>
-            <DownloadForMenu parentRef={props.ref} ref={downloadMenuRef} showControl={showMenu}/>
+            <DownloadForMenu
+                parentRef={props.ref}
+                ref={downloadMenuRef}
+                showControl={showMenu && props.showControl}
+            />
         </>
     )
 }
